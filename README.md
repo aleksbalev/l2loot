@@ -130,16 +130,57 @@ notepad seed-data\sellable_items.json
 
 Edit `seed-data/sellable_items.json` to update item prices:
 
+| Item Name           | Item ID          |
+|---------------------|------------------|
+| Adamantite Nugget   | admantite_nugget |
+| Animal Bone         | animal_bone      |
+| Animal Skin         | animal_skin      |
+| Asofe               | asofe            |
+| Braided Hemp        | braided_hemp     |
+| Charcoal            | charcoal          |
+| Coal                | coal              |
+| Coarse Bone Powder  |coarse_bone_powder |
+| Cokes               | cokes             |
+| Cord                | cord              |
+| Crafted Leather     | crafted_leather   |
+| Durable Metal Plate | reinforcing_plate |
+| EAA                 | scrl_of_ench_am_a |
+| EAB                 | scrl_of_ench_am_b |
+| EAC                 | scrl_of_ench_am_c |
+| EAD                 | scrl_of_ench_am_d |
+| EAS                 | scrl_of_ench_am_s   |
+| Enria               | enria               |
+| EWA                 | scrl_of_ench_wp_a   |
+| EWB                 | scrl_of_ench_wp_b   |
+| EWC                 | scrl_of_ench_wp_c   |
+| EWD                 | scrl_of_ench_wp_d   |
+| EWS                 | scrl_of_ench_wp_s   |
+| High Grade Suede    | high_grade_suede    |
+| Iron Ore            | iron_ore            |
+| Leather             | leather             |
+| Metal Hardener      | reinforcing_agent   |
+| Metallic Fiber      | metallic_fiber      |
+| Metallic Thread     | iron_thread         |
+| Mithril Ore         | mithril_ore         |
+| Mold Glue           | mold_glue           |
+| Mold Hardener       | mold_hardener       |
+| Mold Lubricant      | mold_lubricant      |
+| Oriharukon Ore      | oriharukon_ore      |
+| Steel               | steel               |
+| Stone of Purity     | stone_of_purity     |
+| Thons               | thons               |
+| Varnish             | varnish             |
+
 ```json
 {
   "items": [
     {
-      "item": "Animal Bone",
-      "price": 87
+      "item": "animal_bone",
+      "price": 1300
     },
     {
-      "item": "Coarse Bone Powder", 
-      "price": 1242
+      "item": "coarse_bone_powder", 
+      "price": 13000
     }
   ]
 }
