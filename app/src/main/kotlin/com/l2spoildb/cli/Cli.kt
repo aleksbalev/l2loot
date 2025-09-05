@@ -7,18 +7,24 @@ import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.default
 import com.github.ajalt.clikt.parameters.options.convert
 import com.github.ajalt.clikt.parameters.options.check
+import com.github.ajalt.clikt.parameters.options.help
 import com.l2spoildb.loot.CorpseLoot
 import com.l2spoildb.loot.GroupLootGroups
 import com.l2spoildb.loot.GroupLootItems
 import com.l2spoildb.loot.LootLoader
 import com.l2spoildb.loot.NpcLootSeeder
 import com.l2spoildb.loot.Npcs
+import com.l2spoildb.loot.SellableItem
 import com.l2spoildb.loot.SellableItems
+import com.l2spoildb.utils.AbbreviationToItemKeyMap
+import com.l2spoildb.utils.getKeyByValue
 import org.jetbrains.exposed.v1.core.JoinType
+import org.jetbrains.exposed.v1.core.ResultRow
 import org.jetbrains.exposed.v1.core.eq
 import org.jetbrains.exposed.v1.core.greaterEq
 import org.jetbrains.exposed.v1.core.lessEq
 import org.jetbrains.exposed.v1.core.like
+import org.jetbrains.exposed.v1.core.or
 import org.jetbrains.exposed.v1.jdbc.Database
 import org.jetbrains.exposed.v1.jdbc.SchemaUtils
 import org.jetbrains.exposed.v1.jdbc.andWhere
@@ -355,6 +361,76 @@ class GroupLootItemsList : CliktCommand(name = "group-loot-items", help = "List 
     }
 }
 
+class GetItemPrices : CliktCommand(name = "get-item-prices", help = "Get List of Items prices as well as individual items, could process multiple items item1,item2,item3") {
+    private val itemAbbr by option("--item-abbr")
+        .help("Item abbreviations separated by comma. If not provided, shows all items.")
+
+    override fun run() {
+        try {
+            transaction {
+                val rows = if (itemAbbr == null) {
+                    SellableItems.selectAll().toList()
+                } else {
+                    val parsedAbbr: List<String> = parseItemKeys(itemAbbr!!)
+
+                    if (parsedAbbr.isEmpty()) {
+                        println("Error: No valid item abbreviations found")
+                        return@transaction
+                    }
+
+                    val itemKeys: List<String> = parsedAbbr
+                        .mapNotNull { abbr ->
+                            AbbreviationToItemKeyMap[abbr] ?: run {
+                                println("Warning: Unknown abbreviation '$abbr' - skipping")
+                                null
+                            }
+                        }
+
+                    if (itemKeys.isEmpty()) {
+                        println("Error: No valid item keys found for given abbreviations")
+                        return@transaction
+                    }
+
+                    SellableItems.selectAll()
+                        .andWhere { 
+                            itemKeys.map { itemKey -> 
+                                SellableItems.item eq itemKey 
+                            }.reduce { acc, condition -> acc or condition }
+                        }
+                        .toList()
+                }
+
+                displayResults(rows, itemAbbr)
+            }
+
+        } catch (e: Exception) {
+            println("Error processing request: ${e.message}")
+        }
+    }
+
+    private fun parseItemKeys(input: String): List<String> {
+        return input.split(",")
+            .map { it.trim() }
+            .filter { it.isNotEmpty() }
+            .distinct()
+    }
+
+    private fun displayResults(rows: List<ResultRow>, originalInput: String?) {
+        if (rows.isEmpty()) {
+            println("No items found")
+            return
+        }
+
+        rows.forEach { row ->
+            val itemName = row[SellableItems.item]
+            val itemKey = AbbreviationToItemKeyMap.getKeyByValue(itemName)
+            val price = row[SellableItems.price]
+
+            println("$itemName ($itemKey): $price")
+        }
+    }
+}
+
 fun buildCli(): CliktCommand = Root().subcommands(
     NpcsList(),
     CorpseLootList(),
@@ -362,4 +438,5 @@ fun buildCli(): CliktCommand = Root().subcommands(
     GroupLootItemsList(),
     UpdatePricesCommand(),
     FarmAnalysis(),
+    GetItemPrices()
 )
