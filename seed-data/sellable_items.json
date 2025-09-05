@@ -6,15 +6,15 @@
     },
     {
       "item": "animal_bone",
-      "price": 1250
+      "price": 1300
     },
     {
       "item": "animal_skin",
-      "price": 150
+      "price": 160
     },
     {
       "item": "asofe",
-      "price": 14000
+      "price": 14500
     },
     {
       "item": "braided_hemp",
@@ -22,11 +22,11 @@
     },
     {
       "item": "charcoal",
-      "price": 180
+      "price": 250
     },
     {
       "item": "coal",
-      "price": 250
+      "price": 240
     },
     {
       "item": "coarse_bone_powder",
@@ -34,47 +34,43 @@
     },
     {
       "item": "cokes",
-      "price": 1100
+      "price": 1500
     },
     {
       "item": "cord",
-      "price": 1300
+      "price": 950
     },
     {
       "item": "crafted_leather",
-      "price": 9100
+      "price": 9000
     },
     {
       "item": "reinforcing_plate",
-      "price": 54000
-    },
-    {
-      "item": "scrl_of_ench_am_s",
-      "price": 4100000
+      "price": 53000
     },
     {
       "item": "scrl_of_ench_am_a",
-      "price": 1350000
+      "price": 1300000
     },
     {
       "item": "scrl_of_ench_am_b", 
-      "price": 320000
+      "price": 340000
     },
     {
       "item": "scrl_of_ench_am_c",
-      "price": 50000
+      "price": 49000
     },
     {
       "item": "scrl_of_ench_am_d",
-      "price": 45000
+      "price": 35000
+    },
+    {
+      "item": "scrl_of_ench_am_s",
+      "price": 4000000
     },
     {
       "item": "enria",
-      "price": 42000
-    },
-    {
-      "item": "scrl_of_ench_wp_s",
-      "price": 48000000
+      "price": 43000
     },
     {
       "item": "scrl_of_ench_wp_a",
@@ -82,27 +78,31 @@
     },
     {
       "item": "scrl_of_ench_wp_b",
-      "price": 2200000
+      "price": 2000000
     },
     {
       "item": "scrl_of_ench_wp_c",
-      "price": 830000
+      "price": 820000
     },
     {
       "item": "scrl_of_ench_wp_d",
-      "price": 380000
+      "price": 370000
+    },
+    {
+      "item": "scrl_of_ench_wp_s",
+      "price": 45000000
     },
     {
       "item": "high_grade_suede",
-      "price": 3900
+      "price": 3300
     },
     {
       "item": "iron_ore",
-      "price": 500
+      "price": 480
     },
     {
       "item": "leather",
-      "price": 1100
+      "price": 900
     },
     {
       "item": "reinforcing_agent",
@@ -110,43 +110,43 @@
     },
     {
       "item": "metallic_fiber",
-      "price": 500
+      "price": 400
     },
     {
       "item": "iron_thread",
-      "price": 2600
+      "price": 3000
     },
     {
       "item": "mithril_ore",
-      "price": 7900
+      "price": 7800
     },
     {
       "item": "mold_glue",
-      "price": 40000
+      "price": 25000
     },
     {
       "item": "mold_hardener",
-      "price": 22000
+      "price": 23900
     },
     {
       "item": "mold_lubricant",
-      "price": 13000
+      "price": 12000
     },
     {
       "item": "oriharukon_ore",
-      "price": 24500
+      "price": 22000
     },
     {
       "item": "steel",
-      "price": 8300
+      "price": 9000
     },
     {
       "item": "stone_of_purity",
-      "price": 24900
+      "price": 24000
     },
     {
       "item": "thons",
-      "price": 5500
+      "price": 5300
     },
     {
       "item": "varnish",
