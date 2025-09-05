@@ -1,4 +1,4 @@
-package org.example.cli
+package com.l2spoildb.cli
 
 import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.core.subcommands
@@ -7,7 +7,13 @@ import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.default
 import com.github.ajalt.clikt.parameters.options.convert
 import com.github.ajalt.clikt.parameters.options.check
-import org.example.loot.*
+import com.l2spoildb.loot.CorpseLoot
+import com.l2spoildb.loot.GroupLootGroups
+import com.l2spoildb.loot.GroupLootItems
+import com.l2spoildb.loot.LootLoader
+import com.l2spoildb.loot.NpcLootSeeder
+import com.l2spoildb.loot.Npcs
+import com.l2spoildb.loot.SellableItems
 import org.jetbrains.exposed.v1.core.JoinType
 import org.jetbrains.exposed.v1.core.eq
 import org.jetbrains.exposed.v1.core.greaterEq
@@ -21,9 +27,19 @@ import org.jetbrains.exposed.v1.jdbc.selectAll
 import org.jetbrains.exposed.v1.jdbc.transactions.transaction
 import org.jetbrains.exposed.v1.jdbc.insert
 import org.jetbrains.exposed.v1.jdbc.deleteWhere
+import java.nio.file.Path
 import kotlin.math.roundToInt
 
-class Root : CliktCommand(name = "l2loot", help = "Read-only CLI for NPC loot DB") {
+fun getDefaultSellableItemsPath(): String {
+    val projectPath = "seed-data/sellable_items.json"
+    return projectPath
+}
+
+class Root : CliktCommand(
+    name = "l2loot", 
+    help = "Read-only CLI for NPC loot DB",
+    invokeWithoutSubcommand = true
+) {
     private val dbPath by option("--db", help = "H2 database path without extension").default("./database/mydb")
     private val seedIfEmpty by option("--seed-if-empty", help = "Seed from JSON if tables empty").flag(default = false)
     private val jsonPath by option(
@@ -32,35 +48,41 @@ class Root : CliktCommand(name = "l2loot", help = "Read-only CLI for NPC loot DB
     ).default("seed-data/npc_loot_data_complete.json")
 
     override fun run() {
-        Database.connect("jdbc:h2:$dbPath", driver = "org.h2.Driver")
-        
-        transaction {
-            SchemaUtils.create(Npcs, CorpseLoot, GroupLootGroups, GroupLootItems, SellableItems)
-        }
-        
-        if (seedIfEmpty) {
-            println("Seeding database...")
-            val data = LootLoader.loadFromFile(java.nio.file.Path.of(jsonPath))
-            NpcLootSeeder.seed(data)
-            
-            println("Loading item prices...")
-            val pricesData = LootLoader.loadSellableItemsFromFile(java.nio.file.Path.of("seed-data/sellable_items.json"))
+        if (seedIfEmpty || currentContext.invokedSubcommand != null) {
+            Database.connect("jdbc:h2:$dbPath", driver = "org.h2.Driver")
             
             transaction {
-                SchemaUtils.create(SellableItems)
-                SellableItems.deleteWhere { SellableItems.id greaterEq 1 }
+                SchemaUtils.create(Npcs, CorpseLoot, GroupLootGroups, GroupLootItems, SellableItems)
+            }
+            
+            val shouldSeed = seedIfEmpty || transaction { 
+                Npcs.selectAll().limit(1).empty()
+            }
+            
+            if (shouldSeed) {
+                println("Seeding database...")
+                val data = LootLoader.loadFromFile(Path.of(jsonPath))
+                NpcLootSeeder.seed(data)
                 
-                pricesData.items.forEach { sellableItem ->
-                    SellableItems.insert {
-                        it[item] = sellableItem.item
-                        it[price] = sellableItem.price
+                println("Loading item prices...")
+                val pricesData = LootLoader.loadSellableItemsFromFile(Path.of(getDefaultSellableItemsPath()))
+                
+                transaction {
+                    SchemaUtils.create(SellableItems)
+                    SellableItems.deleteWhere { SellableItems.id greaterEq 1 }
+                    
+                    pricesData.items.forEach { sellableItem ->
+                        SellableItems.insert {
+                            it[item] = sellableItem.item
+                            it[price] = sellableItem.price
+                        }
                     }
                 }
-            }
-            println("Loaded ${pricesData.items.size} item prices")
-            
+                println("Loaded ${pricesData.items.size} item prices")
+                
 
-            println("Seeding completed.")
+                println("Seeding completed.")
+            }
         }
     }
 }
@@ -69,7 +91,7 @@ class UpdatePricesCommand : CliktCommand(name = "update-prices", help = "Gets gi
     private val jsonPath by option(
         "--json",
         help = "Path to json with item prices"
-    ).default("seed-data/sellable_items.json")
+    ).default(getDefaultSellableItemsPath())
 
     override fun run() {
         transaction {
@@ -77,7 +99,7 @@ class UpdatePricesCommand : CliktCommand(name = "update-prices", help = "Gets gi
             
             SellableItems.deleteWhere { SellableItems.id greaterEq 1 }
             
-            val data = LootLoader.loadSellableItemsFromFile(java.nio.file.Path.of(jsonPath))
+            val data = LootLoader.loadSellableItemsFromFile(Path.of(jsonPath))
             
             data.items.forEach { sellableItem ->
                 SellableItems.insert {
@@ -150,7 +172,7 @@ class FarmAnalysis : CliktCommand(name = "farm-analysis", help = "Analyze most p
             println("Top $limit most profitable warrior mobs (levels $minLevel-$maxLevel)$lootTypeDesc:")
             println("=".repeat(60))
             topMobs.forEachIndexed { index, mob ->
-                println("${index + 1}. ${mob.name} (Level ${mob.level}) - ${mob.averageIncome.roundToInt()} adena average")
+                println("${index + 1}. https://l2hub.info/c4/npcs/${mob.name} (Level ${mob.level}) - ${mob.averageIncome.roundToInt()} adena average")
             }
             
             if (topMobs.isEmpty()) {

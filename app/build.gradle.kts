@@ -52,14 +52,14 @@ java {
 
 // Ensure Kotlin compiles to Java 17 bytecode
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
-    kotlinOptions {
-        jvmTarget = "17"
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
 
 application {
     // Define the main class for the application.
-    mainClass = "org.example.AppKt"
+    mainClass = "com.l2spoildb.AppKt"
     // Name of the generated launcher script (bin/l2loot, l2loot.bat)
     applicationName = "l2loot"
 }
@@ -70,7 +70,7 @@ tasks.named<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar>("shadowJ
     archiveClassifier.set("")
     archiveVersion.set("")
     manifest {
-        attributes(mapOf("Main-Class" to "org.example.AppKt"))
+        attributes(mapOf("Main-Class" to "com.l2spoildb.AppKt"))
     }
 }
 

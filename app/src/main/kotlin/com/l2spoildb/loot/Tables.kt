@@ -1,4 +1,4 @@
-package org.example.loot
+package com.l2spoildb.loot
 
 import org.jetbrains.exposed.v1.core.Table
 

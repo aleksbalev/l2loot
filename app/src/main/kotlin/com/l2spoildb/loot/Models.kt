@@ -1,4 +1,4 @@
-package org.example.loot
+package com.l2spoildb.loot
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
