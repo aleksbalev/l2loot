@@ -45,6 +45,7 @@ install.bat
 
 ### Find Profitable Spoil Spots
 
+**Unix/Linux/macOS:**
 ```bash
 # Find top 10 profitable mobs for levels 20-40
 ./bin/l2loot farm-analysis --min-level 20 --max-level 40
@@ -54,6 +55,18 @@ install.bat
 
 # Spoil-only income (excludes regular drops)
 ./bin/l2loot farm-analysis --min-level 30 --max-level 50 --spoil-only
+```
+
+**Windows:**
+```cmd
+# Find top 10 profitable mobs for levels 20-40
+.\bin\l2loot.bat farm-analysis --min-level 20 --max-level 40
+
+# Focus on your exact level range
+.\bin\l2loot.bat farm-analysis --min-level 28 --max-level 33 --limit 5
+
+# Spoil-only income (excludes regular drops)
+.\bin\l2loot.bat farm-analysis --min-level 30 --max-level 50 --spoil-only
 ```
 
 **Example output:**
@@ -69,6 +82,7 @@ Top 5 most profitable warrior mobs (levels 28-33):
 
 ### Browse NPCs and Loot
 
+**Unix/Linux/macOS:**
 ```bash
 # Search for specific NPCs
 ./bin/l2loot npcs --name "orc"
@@ -79,16 +93,37 @@ Top 5 most profitable warrior mobs (levels 28-33):
 ./bin/l2loot group-loot-items   # Regular drops
 ```
 
+**Windows:**
+```cmd
+# Search for specific NPCs
+.\bin\l2loot.bat npcs --name "orc"
+.\bin\l2loot.bat npcs --min-level 25 --max-level 35
+
+# View loot tables
+.\bin\l2loot.bat corpse-loot        # Spoil loot
+.\bin\l2loot.bat group-loot-items   # Regular drops
+```
+
 ### Update Market Prices
 
 Keep your profit calculations current:
 
+**Unix/Linux/macOS:**
 ```bash
 # Edit item prices
 nano seed-data/sellable_items.json
 
 # Update database with new prices
 ./bin/l2loot update-prices
+```
+
+**Windows:**
+```cmd
+# Edit item prices (use Notepad++ or any editor)
+notepad seed-data\sellable_items.json
+
+# Update database with new prices
+.\bin\l2loot.bat update-prices
 ```
 
 ## Price Data Format
