@@ -230,31 +230,58 @@ class FarmAnalysis : CliktCommand(name = "farm-analysis", help = "Analyze most p
                 .andWhere { GroupLootItems.groupId eq groupId }
                 .toList()
             
-            var groupIncome = 0.0
+            // Calculate category-based drops (only ONE item from each group can drop)
+            val groupIncome = calculateCategoryBasedIncome(groupItems)
             
-            for (item in groupItems) {
-                val itemName = item[GroupLootItems.item]
-                val itemChance = item[GroupLootItems.chance]
-                val minCount = item[GroupLootItems.minCount]
-                val maxCount = item[GroupLootItems.maxCount]
-                
-                val averageCount = if (minCount == maxCount) {
-                    minCount.toDouble()
+            totalIncome += (groupChance / 100.0) * groupIncome
+        }
+        
+        return totalIncome
+    }
+    
+    private fun calculateCategoryBasedIncome(groupItems: List<ResultRow>): Double {
+        if (groupItems.isEmpty()) return 0.0
+        
+        val allItems = mutableListOf<Triple<Double, Double, String>>() // (balancedChance, itemValue, itemName)
+        
+        for (item in groupItems) {
+            val itemName = item[GroupLootItems.item]
+            val itemChance = item[GroupLootItems.chance]
+            val minCount = item[GroupLootItems.minCount]
+            val maxCount = item[GroupLootItems.maxCount]
+            
+            val averageCount = if (minCount == maxCount) {
+                minCount.toDouble()
+            } else {
+                (minCount + maxCount) / 2.0
+            }
+            
+            // Apply balanced chance formula: original chance is already in percentage, cap at 100
+            val balancedChance = minOf(itemChance, 100.0)
+            
+            // Calculate item value (adena value or sell price * count)
+            val itemValue = if (itemName.lowercase() == "adena") {
+                averageCount
+            } else {
+                val itemPrice = getItemPrice(itemName)
+                if (itemPrice > 0) {
+                    itemPrice * averageCount
                 } else {
-                    (minCount + maxCount) / 2.0
-                }
-                
-                if (itemName.lowercase() == "adena") {
-                    groupIncome += (itemChance / 100.0) * averageCount
-                } else {
-                    val itemPrice = getItemPrice(itemName)
-                    if (itemPrice > 0) {
-                        groupIncome += (itemPrice * itemChance / 100.0) * averageCount
-                    }
+                    0.0
                 }
             }
             
-            totalIncome += (groupChance / 100.0) * groupIncome
+            allItems.add(Triple(balancedChance, itemValue, itemName))
+        }
+        
+        var totalIncome = 0.0
+        if (allItems.isNotEmpty()) {
+            val totalBalancedChance = maxOf(allItems.sumOf { it.first }, 100.0)
+            
+            for ((balancedChance, itemValue, _) in allItems) {
+                val realChance = balancedChance / totalBalancedChance
+                totalIncome += realChance * itemValue
+            }
         }
         
         return totalIncome
