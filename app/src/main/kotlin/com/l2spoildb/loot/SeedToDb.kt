@@ -2,14 +2,20 @@ package com.l2spoildb.loot
 
 import org.jetbrains.exposed.v1.jdbc.SchemaUtils
 import org.jetbrains.exposed.v1.jdbc.insert
+import org.jetbrains.exposed.v1.jdbc.deleteWhere
 import org.jetbrains.exposed.v1.jdbc.transactions.transaction
+import org.jetbrains.exposed.v1.core.greaterEq
 
 object NpcLootSeeder {
     fun seed(data: NpcLootData) {
         transaction {
             SchemaUtils.create(Npcs, CorpseLoot, GroupLootGroups, GroupLootItems)
 
-            // Note: Schema is recreated in Root command, so always seed
+            // Clear existing data to prevent duplicates
+            GroupLootItems.deleteWhere { GroupLootItems.id greaterEq 1 }
+            GroupLootGroups.deleteWhere { GroupLootGroups.id greaterEq 1 }
+            CorpseLoot.deleteWhere { CorpseLoot.id greaterEq 1 }
+            Npcs.deleteWhere { Npcs.id greaterEq 1 }
 
             var npcCount = 0
             var corpseLootCount = 0
