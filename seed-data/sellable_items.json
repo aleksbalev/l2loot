@@ -151,6 +151,42 @@
     {
       "item": "varnish",
       "price": 1300
+    },
+    {
+      "item": "stem",
+      "price": 100
+    },
+    {
+      "item": "suede",
+      "price": 200
+    },
+    {
+      "item": "thread",
+      "price": 75
+    },
+    {
+      "item": "soul_ore",
+      "price": 275
+    },
+    {
+      "item": "spirit_ore",
+      "price": 440
+    },
+    {
+      "item": "silver_nugget",
+      "price": 450
+    },
+    {
+      "item": "gemstone_d",
+      "price": 1100
+    },
+    {
+      "item": "gemstone_c",
+      "price": 3300
+    },
+    {
+      "item": "gemstone_b",
+      "price": 11000
     }
   ]
 }

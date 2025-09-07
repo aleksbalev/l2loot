@@ -1,6 +1,6 @@
 package com.l2spoildb.utils
 
-val AbbreviationToItemKeyMap = mapOf<String, String>(
+val AbbreviationToItemKeyMap = mapOf(
     "an" to "admantite_nugget",
     "ab" to "animal_bone",
     "as" to "animal_skin",
@@ -38,7 +38,11 @@ val AbbreviationToItemKeyMap = mapOf<String, String>(
     "steel" to "steel",
     "sop" to "stone_of_purity",
     "thons" to "thons",
-    "varnish" to "varnish"
+    "varnish" to "varnish",
+    "thread" to "thread",
+    "suede" to "suede",
+    "stem" to "stem",
+    "sn" to "silver_nugget",
 )
 
 fun <K, V> Map<K, V>.getKeyByValue(value: V): K? {
