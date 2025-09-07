@@ -1,0 +1,1285 @@
+{
+  "materials-recipes": [
+    {
+      "name": "mk_leather",
+      "id": 25,
+      "level": 1,
+      "material": [
+        {
+          "item": "animal_skin",
+          "quantity": 6
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "animal_skin",
+          "quantity": 6
+        }
+      ],
+      "product": [
+        {
+          "item": "leather",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 1814
+    },
+    {
+      "name": "mk_cord",
+      "id": 26,
+      "level": 2,
+      "material": [
+        {
+          "item": "steel",
+          "quantity": 2
+        },
+        {
+          "item": "thread",
+          "quantity": 25
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "varnish",
+          "quantity": 10
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 10
+        },
+        {
+          "item": "thread",
+          "quantity": 25
+        }
+      ],
+      "product": [
+        {
+          "item": "cord",
+          "quantity": 20
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 1817
+    },
+    {
+      "name": "mk_oriharukon",
+      "id": 27,
+      "level": 4,
+      "material": [
+        {
+          "item": "synthesis_cokes",
+          "quantity": 1
+        },
+        {
+          "item": "silver_nugget",
+          "quantity": 12
+        },
+        {
+          "item": "oriharukon_ore",
+          "quantity": 4
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "coal",
+          "quantity": 9
+        },
+        {
+          "item": "charcoal",
+          "quantity": 9
+        },
+        {
+          "item": "oriharukon_ore",
+          "quantity": 5
+        },
+        {
+          "item": "silver_nugget",
+          "quantity": 12
+        }
+      ],
+      "product": [
+        {
+          "item": "oriharukon",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 1825
+    },
+    {
+      "name": "mk_braided_hemp",
+      "id": 28,
+      "level": 1,
+      "material": [
+        {
+          "item": "stem",
+          "quantity": 5
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "stem",
+          "quantity": 5
+        }
+      ],
+      "product": [
+        {
+          "item": "braided_hemp",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2135
+    },
+    {
+      "name": "mk_cokes",
+      "id": 29,
+      "level": 1,
+      "material": [
+        {
+          "item": "coal",
+          "quantity": 3
+        },
+        {
+          "item": "charcoal",
+          "quantity": 3
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "coal",
+          "quantity": 3
+        },
+        {
+          "item": "charcoal",
+          "quantity": 3
+        }
+      ],
+      "product": [
+        {
+          "item": "cokes",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2136
+    },
+    {
+      "name": "mk_steel",
+      "id": 30,
+      "level": 1,
+      "material": [
+        {
+          "item": "varnish",
+          "quantity": 5
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 5
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "varnish",
+          "quantity": 5
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 5
+        }
+      ],
+      "product": [
+        {
+          "item": "steel",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2137
+    },
+    {
+      "name": "mk_coarse_bone_powder",
+      "id": 31,
+      "level": 1,
+      "material": [
+        {
+          "item": "animal_bone",
+          "quantity": 10
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "animal_bone",
+          "quantity": 10
+        }
+      ],
+      "product": [
+        {
+          "item": "coarse_bone_powder",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2138
+    },
+    {
+      "name": "mk_steel_mold",
+      "id": 32,
+      "level": 2,
+      "material": [
+        {
+          "item": "braided_hemp",
+          "quantity": 5
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 5
+        },
+        {
+          "item": "coal",
+          "quantity": 5
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "stem",
+          "quantity": 25
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 5
+        },
+        {
+          "item": "coal",
+          "quantity": 5
+        }
+      ],
+      "product": [
+        {
+          "item": "steel_mold",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2139
+    },
+    {
+      "name": "mk_high_grade_suede",
+      "id": 33,
+      "level": 2,
+      "material": [
+        {
+          "item": "coarse_bone_powder",
+          "quantity": 1
+        },
+        {
+          "item": "suede",
+          "quantity": 3
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "animal_bone",
+          "quantity": 10
+        },
+        {
+          "item": "suede",
+          "quantity": 3
+        }
+      ],
+      "product": [
+        {
+          "item": "high_grade_suede",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2140
+    },
+    {
+      "name": "mk_silver_mold",
+      "id": 34,
+      "level": 2,
+      "material": [
+        {
+          "item": "braided_hemp",
+          "quantity": 5
+        },
+        {
+          "item": "cokes",
+          "quantity": 5
+        },
+        {
+          "item": "silver_nugget",
+          "quantity": 10
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "stem",
+          "quantity": 25
+        },
+        {
+          "item": "coal",
+          "quantity": 15
+        },
+        {
+          "item": "charcoal",
+          "quantity": 15
+        },
+        {
+          "item": "silver_nugget",
+          "quantity": 10
+        }
+      ],
+      "product": [
+        {
+          "item": "silver_mold",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2141
+    },
+    {
+      "name": "mk_varnish_of_purity",
+      "id": 35,
+      "level": 2,
+      "material": [
+        {
+          "item": "coarse_bone_powder",
+          "quantity": 3
+        },
+        {
+          "item": "varnish",
+          "quantity": 3
+        },
+        {
+          "item": "stone_of_purity",
+          "quantity": 1
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "animal_bone",
+          "quantity": 30
+        },
+        {
+          "item": "varnish",
+          "quantity": 3
+        },
+        {
+          "item": "stone_of_purity",
+          "quantity": 1
+        }
+      ],
+      "product": [
+        {
+          "item": "varnish_of_purity",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2142
+    },
+    {
+      "name": "mk_synthesis_cokes",
+      "id": 36,
+      "level": 2,
+      "material": [
+        {
+          "item": "cokes",
+          "quantity": 3
+        },
+        {
+          "item": "oriharukon_ore",
+          "quantity": 1
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "coal",
+          "quantity": 9
+        },
+        {
+          "item": "charcoal",
+          "quantity": 9
+        },
+        {
+          "item": "oriharukon_ore",
+          "quantity": 1
+        }
+      ],
+      "product": [
+        {
+          "item": "synthesis_cokes",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2143
+    },
+    {
+      "name": "mk_compound_braid",
+      "id": 37,
+      "level": 2,
+      "material": [
+        {
+          "item": "braided_hemp",
+          "quantity": 5
+        },
+        {
+          "item": "thread",
+          "quantity": 5
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "stem",
+          "quantity": 25
+        },
+        {
+          "item": "thread",
+          "quantity": 5
+        }
+      ],
+      "product": [
+        {
+          "item": "compound_braid",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2144
+    },
+    {
+      "name": "mk_mithirl_alloy",
+      "id": 38,
+      "level": 4,
+      "material": [
+        {
+          "item": "varnish_of_purity",
+          "quantity": 1
+        },
+        {
+          "item": "steel",
+          "quantity": 2
+        },
+        {
+          "item": "mithril_ore",
+          "quantity": 1
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "animal_bone",
+          "quantity": 30
+        },
+        {
+          "item": "varnish",
+          "quantity": 13
+        },
+        {
+          "item": "stone_of_purity",
+          "quantity": 1
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 10
+        },
+        {
+          "item": "mithril_ore",
+          "quantity": 1
+        }
+      ],
+      "product": [
+        {
+          "item": "mithirl_alloy",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2145
+    },
+    {
+      "name": "mk_artisan's_frame",
+      "id": 39,
+      "level": 4,
+      "material": [
+        {
+          "item": "steel_mold",
+          "quantity": 1
+        },
+        {
+          "item": "varnish_of_purity",
+          "quantity": 5
+        },
+        {
+          "item": "admantite_nugget",
+          "quantity": 10
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "stem",
+          "quantity": 25
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 5
+        },
+        {
+          "item": "admantite_nugget",
+          "quantity": 10
+        },
+        {
+          "item": "coal",
+          "quantity": 5
+        },
+        {
+          "item": "animal_bone",
+          "quantity": 150
+        },
+        {
+          "item": "varnish",
+          "quantity": 15
+        },
+        {
+          "item": "stone_of_purity",
+          "quantity": 5
+        }
+      ],
+      "product": [
+        {
+          "item": "artisan's_frame",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2146
+    },
+    {
+      "name": "mk_blacksmith's_frame",
+      "id": 40,
+      "level": 4,
+      "material": [
+        {
+          "item": "silver_mold",
+          "quantity": 1
+        },
+        {
+          "item": "varnish_of_purity",
+          "quantity": 5
+        },
+        {
+          "item": "mithril_ore",
+          "quantity": 10
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "stem",
+          "quantity": 25
+        },
+        {
+          "item": "coal",
+          "quantity": 15
+        },
+        {
+          "item": "charcoal",
+          "quantity": 15
+        },
+        {
+          "item": "silver_nugget",
+          "quantity": 10
+        },
+        {
+          "item": "admantite_nugget",
+          "quantity": 10
+        },
+        {
+          "item": "animal_bone",
+          "quantity": 150
+        },
+        {
+          "item": "varnish",
+          "quantity": 15
+        },
+        {
+          "item": "stone_of_purity",
+          "quantity": 5
+        },
+        {
+          "item": "mithril_ore",
+          "quantity": 10
+        }
+      ],
+      "product": [
+        {
+          "item": "blacksmith's_frame",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2147
+    },
+    {
+      "name": "mk_crafted_leather",
+      "id": 41,
+      "level": 4,
+      "material": [
+        {
+          "item": "cord",
+          "quantity": 4
+        },
+        {
+          "item": "leather",
+          "quantity": 4
+        },
+        {
+          "item": "coal",
+          "quantity": 4
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "varnish",
+          "quantity": 2
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 2
+        },
+        {
+          "item": "animal_skin",
+          "quantity": 24
+        },
+        {
+          "item": "coal",
+          "quantity": 4
+        },
+        {
+          "item": "thread",
+          "quantity": 5
+        }
+      ],
+      "product": [
+        {
+          "item": "crafted_leather",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2148
+    },
+    {
+      "name": "mk_metallic_fiber",
+      "id": 42,
+      "level": 4,
+      "material": [
+        {
+          "item": "cord",
+          "quantity": 20
+        },
+        {
+          "item": "silver_nugget",
+          "quantity": 15
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "varnish",
+          "quantity": 10
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 10
+        },
+        {
+          "item": "thread",
+          "quantity": 25
+        },
+        {
+          "item": "silver_nugget",
+          "quantity": 15
+        }
+      ],
+      "product": [
+        {
+          "item": "metallic_fiber",
+          "quantity": 20
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 2149
+    },
+    {
+      "name": "mk_reinforcing_agent",
+      "id": 497,
+      "level": 4,
+      "material": [
+        {
+          "item": "stem",
+          "quantity": 10
+        },
+        {
+          "item": "varnish",
+          "quantity": 10
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 10
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "stem",
+          "quantity": 10
+        },
+        {
+          "item": "varnish",
+          "quantity": 10
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 10
+        }
+      ],
+      "product": [
+        {
+          "item": "reinforcing_agent",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 5231
+    },
+    {
+      "name": "mk_craftsman_mold",
+      "id": 476,
+      "level": 6,
+      "material": [
+        {
+          "item": "artisan's_frame",
+          "quantity": 2
+        },
+        {
+          "item": "mold_hardener",
+          "quantity": 20
+        },
+        {
+          "item": "enria",
+          "quantity": 5
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "stem",
+          "quantity": 50
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 10
+        },
+        {
+          "item": "coal",
+          "quantity": 10
+        },
+        {
+          "item": "animal_bone",
+          "quantity": 300
+        },
+        {
+          "item": "varnish",
+          "quantity": 30
+        },
+        {
+          "item": "stone_of_purity",
+          "quantity": 10
+        },
+        {
+          "item": "admantite_nugget",
+          "quantity": 20
+        },
+        {
+          "item": "mold_hardener",
+          "quantity": 20
+        },
+        {
+          "item": "enria",
+          "quantity": 5
+        }
+      ],
+      "product": [
+        {
+          "item": "craftsman_mold",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 4124
+    },
+    {
+      "name": "mk_maestro_anvil_lock",
+      "id": 475,
+      "level": 6,
+      "material": [
+        {
+          "item": "synthesis_cokes",
+          "quantity": 4
+        },
+        {
+          "item": "mold_glue",
+          "quantity": 4
+        },
+        {
+          "item": "mold_lubricant",
+          "quantity": 4
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "coal",
+          "quantity": 36
+        },
+        {
+          "item": "charcoal",
+          "quantity": 36
+        },
+        {
+          "item": "oriharukon_ore",
+          "quantity": 4
+        },
+        {
+          "item": "mold_glue",
+          "quantity": 4
+        },
+        {
+          "item": "mold_lubricant",
+          "quantity": 4
+        }
+      ],
+      "product": [
+        {
+          "item": "maestro_anvil_lock",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 4123
+    },
+    {
+      "name": "mk_maestro_holder",
+      "id": 474,
+      "level": 6,
+      "material": [
+        {
+          "item": "varnish_of_purity",
+          "quantity": 10
+        },
+        {
+          "item": "mold_lubricant",
+          "quantity": 10
+        },
+        {
+          "item": "mold_hardener",
+          "quantity": 10
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "animal_bone",
+          "quantity": 300
+        },
+        {
+          "item": "varnish",
+          "quantity": 30
+        },
+        {
+          "item": "stone_of_purity",
+          "quantity": 10
+        },
+        {
+          "item": "mold_lubricant",
+          "quantity": 10
+        },
+        {
+          "item": "mold_hardener",
+          "quantity": 10
+        }
+      ],
+      "product": [
+        {
+          "item": "maestro_holder",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 4122
+    },
+    {
+      "name": "mk_maestro_mold",
+      "id": 477,
+      "level": 6,
+      "material": [
+        {
+          "item": "blacksmith's_frame",
+          "quantity": 1
+        },
+        {
+          "item": "mold_glue",
+          "quantity": 10
+        },
+        {
+          "item": "asofe",
+          "quantity": 5
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "stem",
+          "quantity": 25
+        },
+        {
+          "item": "coal",
+          "quantity": 15
+        },
+        {
+          "item": "charcoal",
+          "quantity": 15
+        },
+        {
+          "item": "silver_nugget",
+          "quantity": 10
+        },
+        {
+          "item": "animal_bone",
+          "quantity": 300
+        },
+        {
+          "item": "varnish",
+          "quantity": 15
+        },
+        {
+          "item": "stone_of_purity",
+          "quantity": 5
+        },
+        {
+          "item": "mithril_ore",
+          "quantity": 10
+        },
+        {
+          "item": "mold_glue",
+          "quantity": 10
+        },
+        {
+          "item": "asofe",
+          "quantity": 5
+        }
+      ],
+      "product": [
+        {
+          "item": "maestro_mold",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 4125
+    },
+    {
+      "name": "mk_reinforcing_plate",
+      "id": 608,
+      "level": 4,
+      "material": [
+        {
+          "item": "iron_thread",
+          "quantity": 5
+        },
+        {
+          "item": "mithril_ore",
+          "quantity": 5
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "thread",
+          "quantity": 50
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 25
+        },
+        {
+          "item": "mithril_ore",
+          "quantity": 5
+        }
+      ],
+      "product": [
+        {
+          "item": "reinforcing_plate",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 5473
+    },
+    {
+      "name": "mk_arcsmith_anvil",
+      "id": 611,
+      "level": 6,
+      "material": [
+        {
+          "item": "maestro_anvil_lock",
+          "quantity": 3
+        },
+        {
+          "item": "mold_lubricant",
+          "quantity": 20
+        },
+        {
+          "item": "thons",
+          "quantity": 10
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "coal",
+          "quantity": 108
+        },
+        {
+          "item": "charcoal",
+          "quantity": 108
+        },
+        {
+          "item": "oriharukon_ore",
+          "quantity": 12
+        },
+        {
+          "item": "mold_glue",
+          "quantity": 12
+        },
+        {
+          "item": "mold_lubricant",
+          "quantity": 32
+        },
+        {
+          "item": "thons",
+          "quantity": 10
+        }
+      ],
+      "product": [
+        {
+          "item": "arcsmith_anvil",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 5476
+    },
+    {
+      "name": "mk_iron_thread",
+      "id": 607,
+      "level": 4,
+      "material": [
+        {
+          "item": "thread",
+          "quantity": 10
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 5
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "thread",
+          "quantity": 10
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 5
+        }
+      ],
+      "product": [
+        {
+          "item": "iron_thread",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 5472
+    },
+    {
+      "name": "mk_reorins_mold",
+      "id": 609,
+      "level": 5,
+      "material": [
+        {
+          "item": "cord",
+          "quantity": 40
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 10
+        },
+        {
+          "item": "admantite_nugget",
+          "quantity": 15
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "varnish",
+          "quantity": 20
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 270
+        },
+        {
+          "item": "thread",
+          "quantity": 550
+        },
+        {
+          "item": "mithril_ore",
+          "quantity": 50
+        },
+        {
+          "item": "admantite_nugget",
+          "quantity": 15
+        }
+      ],
+      "product": [
+        {
+          "item": "reorins_mold",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 5474
+    },
+    {
+      "name": "mk_warsmith_mold",
+      "id": 610,
+      "level": 6,
+      "material": [
+        {
+          "item": "artisan's_frame",
+          "quantity": 1
+        },
+        {
+          "item": "mold_hardener",
+          "quantity": 10
+        },
+        {
+          "item": "enria",
+          "quantity": 5
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "stem",
+          "quantity": 25
+        },
+        {
+          "item": "iron_ore",
+          "quantity": 5
+        },
+        {
+          "item": "admantite_nugget",
+          "quantity": 10
+        },
+        {
+          "item": "coal",
+          "quantity": 5
+        },
+        {
+          "item": "animal_bone",
+          "quantity": 150
+        },
+        {
+          "item": "varnish",
+          "quantity": 15
+        },
+        {
+          "item": "stone_of_purity",
+          "quantity": 5
+        },
+        {
+          "item": "mold_hardener",
+          "quantity": 10
+        },
+        {
+          "item": "enria",
+          "quantity": 5
+        }
+      ],
+      "product": [
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 5475
+    },
+    {
+      "name": "mk_warsmith_holder",
+      "id": 612,
+      "level": 6,
+      "material": [
+        {
+          "item": "maestro_holder",
+          "quantity": 2
+        },
+        {
+          "item": "mold_glue",
+          "quantity": 10
+        },
+        {
+          "item": "thread",
+          "quantity": 20
+        }
+      ],
+      "raw_materials": [
+        {
+          "item": "animal_bone",
+          "quantity": 600
+        },
+        {
+          "item": "varnish",
+          "quantity": 60
+        },
+        {
+          "item": "stone_of_purity",
+          "quantity": 20
+        },
+        {
+          "item": "mold_lubricant",
+          "quantity": 20
+        },
+        {
+          "item": "mold_hardener",
+          "quantity": 20
+        },
+        {
+          "item": "mold_glue",
+          "quantity": 10
+        },
+        {
+          "item": "thread",
+          "quantity": 20
+        }
+      ],
+      "product": [
+        {
+          "item": "warsmith_holder",
+          "quantity": 1
+        }
+      ],
+      "success_rate": 100,
+      "item_id": 5477
+    }
+  ]
+}

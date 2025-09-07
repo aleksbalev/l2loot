@@ -1,0 +1,2786 @@
+{
+  "grade": "S",
+  "count": 56,
+  "recipes": [
+    {
+      "name": "mk_forgotten_blade_i",
+      "id": 626,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_forgotten_blade_i",
+          "quantity": 1
+        },
+        {
+          "item": "forgotten_blade_edge",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 4
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 264
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 264
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 132
+        },
+        {
+          "item": "enria",
+          "quantity": 132
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 211
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "forgotten_blade",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6881,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_forgotten_blade_ii",
+      "id": 627,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_forgotten_blade",
+          "quantity": 1
+        },
+        {
+          "item": "forgotten_blade_edge",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 8
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 486
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 486
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 243
+        },
+        {
+          "item": "enria",
+          "quantity": 243
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 399
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "forgotten_blade",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6882,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_basalt_battlehammer_i",
+      "id": 628,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_basalt_battlehammer_i",
+          "quantity": 1
+        },
+        {
+          "item": "basalt_battlehammer_head",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 4
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 154
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 154
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 308
+        },
+        {
+          "item": "enria",
+          "quantity": 77
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 211
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "basalt_battlehammer",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6883,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_basalt_battlehammer_ii",
+      "id": 629,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_basalt_battlehammer",
+          "quantity": 1
+        },
+        {
+          "item": "basalt_battlehammer_head",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 8
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 284
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 284
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 568
+        },
+        {
+          "item": "enria",
+          "quantity": 142
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 398
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "basalt_battlehammer",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6884,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_imperial_staff_i",
+      "id": 630,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_imperial_staff_i",
+          "quantity": 1
+        },
+        {
+          "item": "piece_of_imperial_staff",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 4
+        },
+        {
+          "item": "oriharukon",
+          "quantity": 121
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 242
+        },
+        {
+          "item": "compound_braid",
+          "quantity": 121
+        },
+        {
+          "item": "coarse_bone_powder",
+          "quantity": 242
+        },
+        {
+          "item": "enria",
+          "quantity": 121
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 210
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "imperial_staff",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6885,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_imperial_staff_ii",
+      "id": 631,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_imperial_staff",
+          "quantity": 1
+        },
+        {
+          "item": "piece_of_imperial_staff",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 8
+        },
+        {
+          "item": "oriharukon",
+          "quantity": 222
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 444
+        },
+        {
+          "item": "compound_braid",
+          "quantity": 222
+        },
+        {
+          "item": "coarse_bone_powder",
+          "quantity": 444
+        },
+        {
+          "item": "enria",
+          "quantity": 222
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 400
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "imperial_staff",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6886,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_angel_slayer_i",
+      "id": 632,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_angel_slayer_i",
+          "quantity": 1
+        },
+        {
+          "item": "angel_slayer_blade",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 4
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 264
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 264
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 132
+        },
+        {
+          "item": "enria",
+          "quantity": 132
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 211
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "angel_slayer",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6887,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_angel_slayer_ii",
+      "id": 633,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_angel_slayer",
+          "quantity": 1
+        },
+        {
+          "item": "angel_slayer_blade",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 8
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 486
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 486
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 243
+        },
+        {
+          "item": "enria",
+          "quantity": 243
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 399
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "angel_slayer",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6888,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_shining_bow_i",
+      "id": 634,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_shining_bow_i",
+          "quantity": 1
+        },
+        {
+          "item": "shining_bow_shaft",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 4
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 375
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 75
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 150
+        },
+        {
+          "item": "enria",
+          "quantity": 75
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 212
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "shining_bow",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6889,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_shining_bow_ii",
+      "id": 635,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_shining_bow",
+          "quantity": 1
+        },
+        {
+          "item": "shining_bow_shaft",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 8
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 695
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 139
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 278
+        },
+        {
+          "item": "enria",
+          "quantity": 139
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 397
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "shining_bow",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6890,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_dragon_hunter_axe_i",
+      "id": 636,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_dragon_hunter_axe_i",
+          "quantity": 1
+        },
+        {
+          "item": "dragon_hunter_axe_blade",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 4
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 248
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 124
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 248
+        },
+        {
+          "item": "enria",
+          "quantity": 62
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 214
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "dragon_hunter_axe",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6891,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_dragon_hunter_axe_ii",
+      "id": 637,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_dragon_hunter_axe",
+          "quantity": 1
+        },
+        {
+          "item": "dragon_hunter_axe_blade",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 8
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 464
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 232
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 464
+        },
+        {
+          "item": "enria",
+          "quantity": 116
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 395
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "dragon_hunter_axe",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6892,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_saint_spear_i",
+      "id": 638,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_saint_spear_i",
+          "quantity": 1
+        },
+        {
+          "item": "saint_spear_blade",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 4
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 248
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 124
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 248
+        },
+        {
+          "item": "enria",
+          "quantity": 62
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 214
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "saint_spear",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6893,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_saint_spear_ii",
+      "id": 639,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_saint_spear",
+          "quantity": 1
+        },
+        {
+          "item": "saint_spear_blade",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 8
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 464
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 232
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 464
+        },
+        {
+          "item": "enria",
+          "quantity": 116
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 395
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "saint_spear",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6894,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_demon_splinter_i",
+      "id": 640,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_demon_splinter_i",
+          "quantity": 1
+        },
+        {
+          "item": "demon_splinter_blade",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 4
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 154
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 154
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 308
+        },
+        {
+          "item": "enria",
+          "quantity": 77
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 211
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "demon_splinter",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6895,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_demon_splinter_ii",
+      "id": 641,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_demon_splinter",
+          "quantity": 1
+        },
+        {
+          "item": "demon_splinter_blade",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 8
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 284
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 284
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 568
+        },
+        {
+          "item": "enria",
+          "quantity": 142
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 398
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "demon_splinter",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6896,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_heavens_divider_i",
+      "id": 642,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_heavens_divider_i",
+          "quantity": 1
+        },
+        {
+          "item": "heavens_divider_edge",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 4
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 292
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 146
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 146
+        },
+        {
+          "item": "enria",
+          "quantity": 146
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 212
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "heavens_divider",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6897,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_heavens_divider_ii",
+      "id": 643,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_heavens_divider",
+          "quantity": 1
+        },
+        {
+          "item": "heavens_divider_edge",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 8
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 540
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 270
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 270
+        },
+        {
+          "item": "enria",
+          "quantity": 270
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 399
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "heavens_divider",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6898,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_arcana_mace_i",
+      "id": 644,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_arcana_mace_i",
+          "quantity": 1
+        },
+        {
+          "item": "arcana_mace_head",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 4
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 154
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 154
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 308
+        },
+        {
+          "item": "enria",
+          "quantity": 77
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 211
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "arcana_mace",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6899,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_arcana_mace_ii",
+      "id": 645,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_arcana_mace",
+          "quantity": 1
+        },
+        {
+          "item": "arcana_mace_head",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 8
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 284
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 284
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 568
+        },
+        {
+          "item": "enria",
+          "quantity": 142
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 398
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "arcana_mace",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6900,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_sanddragon's_earing_i",
+      "id": 646,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_sanddragon's_earing_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_sanddragon's_earing_piece",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "metallic_fiber",
+          "quantity": 105
+        },
+        {
+          "item": "varnish_of_purity",
+          "quantity": 63
+        },
+        {
+          "item": "thons",
+          "quantity": 21
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 18
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 3
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_sanddragon's_earing",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 70,
+      "item_id": 6847,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_sanddragon's_earing_ii",
+      "id": 647,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_sanddragon's_earing",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_sanddragon's_earing_piece",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "metallic_fiber",
+          "quantity": 195
+        },
+        {
+          "item": "varnish_of_purity",
+          "quantity": 117
+        },
+        {
+          "item": "thons",
+          "quantity": 39
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 29
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 3
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_sanddragon's_earing",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6848,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_ring_of_aurakyria_i",
+      "id": 648,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_ring_of_aurakyria_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_ring_of_aurakyria_gem",
+          "quantity": 17
+        },
+        {
+          "item": "maestro_mold",
+          "quantity": 1
+        },
+        {
+          "item": "metallic_fiber",
+          "quantity": 85
+        },
+        {
+          "item": "varnish_of_purity",
+          "quantity": 51
+        },
+        {
+          "item": "thons",
+          "quantity": 17
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 12
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_ring_of_aurakyria",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 70,
+      "item_id": 6849,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_ring_of_aurakyria_ii",
+      "id": 649,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_ring_of_aurakyria",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_ring_of_aurakyria_gem",
+          "quantity": 17
+        },
+        {
+          "item": "maestro_mold",
+          "quantity": 1
+        },
+        {
+          "item": "metallic_fiber",
+          "quantity": 145
+        },
+        {
+          "item": "varnish_of_purity",
+          "quantity": 87
+        },
+        {
+          "item": "thons",
+          "quantity": 29
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 20
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_ring_of_aurakyria",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6850,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_dragon_necklace_i",
+      "id": 650,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_dragon_necklace_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_dragon_necklace_wire",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "metallic_fiber",
+          "quantity": 160
+        },
+        {
+          "item": "varnish_of_purity",
+          "quantity": 96
+        },
+        {
+          "item": "thons",
+          "quantity": 32
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 24
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 4
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_dragon_necklace",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 70,
+      "item_id": 6851,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_dragon_necklace_ii",
+      "id": 651,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_dragon_necklace",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_dragon_necklace_wire",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "metallic_fiber",
+          "quantity": 280
+        },
+        {
+          "item": "varnish_of_purity",
+          "quantity": 168
+        },
+        {
+          "item": "thons",
+          "quantity": 56
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 39
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 4
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_dragon_necklace",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6852,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_imperial_crusader_armor_i",
+      "id": 652,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_imperial_crusader_armor_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_imperial_crusader_armor_part",
+          "quantity": 17
+        },
+        {
+          "item": "arcsmith_anvil",
+          "quantity": 3
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 117
+        },
+        {
+          "item": "asofe",
+          "quantity": 78
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 62
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 11
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_imperial_crusader_armor",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6853,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_imperial_crusader_armor_ii",
+      "id": 653,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_imperial_crusader_armor",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_imperial_crusader_armor_part",
+          "quantity": 17
+        },
+        {
+          "item": "arcsmith_anvil",
+          "quantity": 4
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 273
+        },
+        {
+          "item": "asofe",
+          "quantity": 182
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 117
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 11
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_imperial_crusader_armor",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6854,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_imperial_crusader_gaiters_i",
+      "id": 654,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_imperial_crusader_gaiters_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_imperial_crusader_gaiters_pattern",
+          "quantity": 17
+        },
+        {
+          "item": "arcsmith_anvil",
+          "quantity": 2
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 72
+        },
+        {
+          "item": "asofe",
+          "quantity": 48
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 37
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 6
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_imperial_crusader_gaiters",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6855,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_imperial_crusader_gaiters_ii",
+      "id": 655,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_imperial_crusader_gaiters",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_imperial_crusader_gaiters_pattern",
+          "quantity": 17
+        },
+        {
+          "item": "arcsmith_anvil",
+          "quantity": 3
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 156
+        },
+        {
+          "item": "asofe",
+          "quantity": 104
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 73
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 6
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_imperial_crusader_gaiters",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6856,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_imperial_crusader_gauntlet_i",
+      "id": 656,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_imperial_crusader_gauntlet_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_imperial_crusader_gauntlet_design",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 12
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 16
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_imperial_crusader_gauntlet",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6857,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_imperial_crusader_gauntlet_ii",
+      "id": 657,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_imperial_crusader_gauntlet",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_imperial_crusader_gauntlet_design",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 31
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 30
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_imperial_crusader_gauntlet",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6858,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_imperial_crusader_boots_i",
+      "id": 658,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_imperial_crusader_boots_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_imperial_crusader_boots_design",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 12
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 16
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_imperial_crusader_boots",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6859,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_imperial_crusader_boots_ii",
+      "id": 659,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_imperial_crusader_boots",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_imperial_crusader_boots_design",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 31
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 30
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_imperial_crusader_boots",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6860,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_imperial_crusader_shield_i",
+      "id": 660,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_imperial_crusader_shield_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_imperial_crusader_shield_part",
+          "quantity": 17
+        },
+        {
+          "item": "reorins_mold",
+          "quantity": 1
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 36
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 12
+        },
+        {
+          "item": "asofe",
+          "quantity": 12
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 17
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_imperial_crusader_shield",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6861,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_imperial_crusader_shield_ii",
+      "id": 661,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_imperial_crusader_shield",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_imperial_crusader_shield_part",
+          "quantity": 17
+        },
+        {
+          "item": "reorins_mold",
+          "quantity": 1
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 87
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 29
+        },
+        {
+          "item": "asofe",
+          "quantity": 29
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 32
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_imperial_crusader_shield",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6862,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_imperial_crusader_helmet_i",
+      "id": 662,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_imperial_crusader_helmet_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_imperial_crusader_helmet_pattern",
+          "quantity": 17
+        },
+        {
+          "item": "reorins_mold",
+          "quantity": 1
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 25
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 4
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_imperial_crusader_helmet",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6863,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_imperial_crusader_helmet_ii",
+      "id": 663,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_imperial_crusader_helmet",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_imperial_crusader_helmet_pattern",
+          "quantity": 17
+        },
+        {
+          "item": "reorins_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 37
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 43
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 4
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_imperial_crusader_helmet",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6864,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_draconic_leather_armor_i",
+      "id": 664,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_draconic_leather_armor_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_draconic_leather_armor_part",
+          "quantity": 17
+        },
+        {
+          "item": "arcsmith_anvil",
+          "quantity": 3
+        },
+        {
+          "item": "metallic_fiber",
+          "quantity": 168
+        },
+        {
+          "item": "compound_braid",
+          "quantity": 84
+        },
+        {
+          "item": "asofe",
+          "quantity": 84
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 75
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 14
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_draconic_leather_armor",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6865,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_draconic_leather_armor_ii",
+      "id": 665,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_draconic_leather_armor",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_draconic_leather_armor_part",
+          "quantity": 17
+        },
+        {
+          "item": "arcsmith_anvil",
+          "quantity": 6
+        },
+        {
+          "item": "metallic_fiber",
+          "quantity": 304
+        },
+        {
+          "item": "compound_braid",
+          "quantity": 152
+        },
+        {
+          "item": "asofe",
+          "quantity": 152
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 144
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 14
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_draconic_leather_armor",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6866,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_draconic_leather_gloves_i",
+      "id": 666,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_draconic_leather_gloves_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_draconic_leather_gloves_fabric",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 12
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 16
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_draconic_leather_gloves",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6867,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_draconic_leather_gloves_ii",
+      "id": 667,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_draconic_leather_gloves",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_draconic_leather_gloves_fabric",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 31
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 30
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_draconic_leather_gloves",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6868,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_draconic_leather_boots_i",
+      "id": 668,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_draconic_leather_boots_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_draconic_leather_boots_design",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 12
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 16
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_draconic_leather_boots",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6869,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_draconic_leather_boots_ii",
+      "id": 669,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_draconic_leather_boots",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_draconic_leather_boots_design",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 31
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 30
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_draconic_leather_boots",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6870,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_draconic_leather_helmet_i",
+      "id": 670,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_draconic_leather_helmet_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_draconic_leather_helmet_pattern",
+          "quantity": 17
+        },
+        {
+          "item": "reorins_mold",
+          "quantity": 1
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 25
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 4
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_draconic_leather_helmet",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6871,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_draconic_leather_helmet_ii",
+      "id": 671,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_draconic_leather_helmet",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_draconic_leather_helmet_pattern",
+          "quantity": 17
+        },
+        {
+          "item": "reorins_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 37
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 43
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 4
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_draconic_leather_helmet",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6872,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_major_arcana_robe_i",
+      "id": 672,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_major_arcana_robe_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_major_arcana_robe_part",
+          "quantity": 17
+        },
+        {
+          "item": "arcsmith_anvil",
+          "quantity": 3
+        },
+        {
+          "item": "metallic_fiber",
+          "quantity": 168
+        },
+        {
+          "item": "compound_braid",
+          "quantity": 84
+        },
+        {
+          "item": "asofe",
+          "quantity": 84
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 75
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 14
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_major_arcana_robe",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6873,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_major_arcana_robe_ii",
+      "id": 673,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_major_arcana_robe",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_major_arcana_robe_part",
+          "quantity": 17
+        },
+        {
+          "item": "arcsmith_anvil",
+          "quantity": 6
+        },
+        {
+          "item": "metallic_fiber",
+          "quantity": 304
+        },
+        {
+          "item": "compound_braid",
+          "quantity": 152
+        },
+        {
+          "item": "asofe",
+          "quantity": 152
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 144
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 14
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_major_arcana_robe",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6874,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_major_arcana_gloves_i",
+      "id": 674,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_major_arcana_gloves_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_major_arcana_gloves_fabric",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 12
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 16
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_major_arcana_gloves",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6875,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_major_arcana_gloves_ii",
+      "id": 675,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_major_arcana_gloves",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_major_arcana_gloves_fabric",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 31
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 30
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_major_arcana_gloves",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6876,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_major_arcana_boots_i",
+      "id": 676,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_major_arcana_boots_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_major_arcana_boots_design",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 12
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 16
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_major_arcana_boots",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6877,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_major_arcana_boots_ii",
+      "id": 677,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_major_arcana_boots",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_major_arcana_boots_design",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 31
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 30
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 2
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_major_arcana_boots",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6878,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_major_arcana_hood_i",
+      "id": 678,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_major_arcana_hood_i",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_major_arcana_hood_pattern",
+          "quantity": 17
+        },
+        {
+          "item": "reorins_mold",
+          "quantity": 1
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 25
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 4
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_major_arcana_hood",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 6879,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_sealed_major_arcana_hood_ii",
+      "id": 679,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_sealed_major_arcana_hood",
+          "quantity": 1
+        },
+        {
+          "item": "sealed_major_arcana_hood_pattern",
+          "quantity": 17
+        },
+        {
+          "item": "reorins_mold",
+          "quantity": 1
+        },
+        {
+          "item": "asofe",
+          "quantity": 37
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 43
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 4
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "sealed_major_arcana_hood",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 6880,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_draconic_bow_i",
+      "id": 774,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_draconic_bow_i",
+          "quantity": 1
+        },
+        {
+          "item": "draconic_bow_shaft",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 4
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 375
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 75
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 150
+        },
+        {
+          "item": "enria",
+          "quantity": 75
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 212
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "draconic_bow",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 60,
+      "item_id": 7580,
+      "iscommonrecipe": 0
+    },
+    {
+      "name": "mk_draconic_bow_ii",
+      "id": 775,
+      "level": 9,
+      "material": [
+        {
+          "item": "rp_draconic_bow",
+          "quantity": 1
+        },
+        {
+          "item": "draconic_bow_shaft",
+          "quantity": 17
+        },
+        {
+          "item": "warsmith_holder",
+          "quantity": 8
+        },
+        {
+          "item": "mithirl_alloy",
+          "quantity": 695
+        },
+        {
+          "item": "synthesis_cokes",
+          "quantity": 139
+        },
+        {
+          "item": "reinforcing_plate",
+          "quantity": 278
+        },
+        {
+          "item": "enria",
+          "quantity": 139
+        },
+        {
+          "item": "crystal_s",
+          "quantity": 397
+        },
+        {
+          "item": "gemstone_s",
+          "quantity": 43
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "draconic_bow",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [],
+      "mp_consume": 225,
+      "success_rate": 100,
+      "item_id": 7581,
+      "iscommonrecipe": 0
+    }
+  ]
+}
