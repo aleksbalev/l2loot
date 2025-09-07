@@ -126,7 +126,9 @@ notepad seed-data\sellable_items.json
 .\bin\l2loot.bat update-prices
 ```
 
-## Price Data Format
+## Prices
+
+Prices have to be added manually, there is no API that I can use for dynamic and actual updates of prices, so it is ont you to keep it fresh.
 
 Edit `seed-data/sellable_items.json` to update item prices:
 
