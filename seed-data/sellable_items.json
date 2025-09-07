@@ -207,6 +207,14 @@
     {
       "item": "gemstone_b",
       "price": 11000
+    },
+    {
+      "item": "gemstone_a",
+      "price": 70000
+    },
+    {
+      "item": "gemstone_s",
+      "price": 200000
     }
   ]
 }
