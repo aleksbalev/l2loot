@@ -43,6 +43,11 @@ val AbbreviationToItemKeyMap = mapOf(
     "suede" to "suede",
     "stem" to "stem",
     "sn" to "silver_nugget",
+    "dx" to "crystal_d",
+    "cx" to "crystal_c",
+    "bx" to "crystal_b",
+    "ax" to "crystal_a",
+    "sx" to "crystal_s"
 )
 
 fun <K, V> Map<K, V>.getKeyByValue(value: V): K? {

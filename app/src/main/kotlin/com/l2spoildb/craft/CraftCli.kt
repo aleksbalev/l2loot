@@ -59,7 +59,17 @@ class CrystalAnalysisCommand : CliktCommand(
                 
             recipesWithCrystals.mapNotNull { recipe ->
                 val recipeId = recipe[Recipes.id]
-                val itemName = recipe[Recipes.name].removePrefix("mk_")
+                val productName = RecipeMaterials
+                    .selectAll()
+                    .where {
+                        (RecipeMaterials.recipeId eq recipeId) and
+                        (RecipeMaterials.materialType eq "product")
+                    }
+                    .limit(1)
+                    .map { it[RecipeMaterials.itemName] }
+                    .firstOrNull()
+                    ?: recipe[Recipes.name].removePrefix("mk_")
+                val itemName = productName
                 val crystalsGained = recipe[Recipes.crystalCount] ?: 0
                 
                 if (crystalsGained <= 0) return@mapNotNull null

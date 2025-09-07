@@ -177,6 +177,26 @@
       "price": 450
     },
     {
+      "item": "crystal_d",
+      "price": 660
+    },
+    {
+      "item": "crystal_c",
+      "price": 2950
+    },
+    {
+      "item": "crystal_b",
+      "price": 11900
+    },
+    {
+      "item": "crystal_a",
+      "price": 14000
+    },
+    {
+      "item": "crystal_s",
+      "price": 36000
+    },
+    {
       "item": "gemstone_d",
       "price": 1100
     },
