@@ -16,6 +16,13 @@ import com.l2spoildb.loot.NpcLootSeeder
 import com.l2spoildb.loot.Npcs
 import com.l2spoildb.loot.SellableItem
 import com.l2spoildb.loot.SellableItems
+import com.l2spoildb.craft.Recipes
+import com.l2spoildb.craft.RecipeMaterials
+import com.l2spoildb.craft.ItemRawMaterials
+import com.l2spoildb.craft.BasicMaterials
+import com.l2spoildb.craft.Seeder
+import com.l2spoildb.craft.RecipesSeeder
+import com.l2spoildb.craft.CrystalAnalysisCommand
 import com.l2spoildb.utils.AbbreviationToItemKeyMap
 import com.l2spoildb.utils.getKeyByValue
 import org.jetbrains.exposed.v1.core.JoinType
@@ -58,7 +65,8 @@ class Root : CliktCommand(
             Database.connect("jdbc:h2:$dbPath", driver = "org.h2.Driver")
             
             transaction {
-                SchemaUtils.create(Npcs, CorpseLoot, GroupLootGroups, GroupLootItems, SellableItems)
+                SchemaUtils.create(Npcs, CorpseLoot, GroupLootGroups, GroupLootItems, SellableItems, 
+                                 Recipes, RecipeMaterials, ItemRawMaterials, BasicMaterials)
             }
             
             val shouldSeed = seedIfEmpty || transaction { 
@@ -86,6 +94,25 @@ class Root : CliktCommand(
                 }
                 println("Loaded ${pricesData.items.size} item prices")
                 
+                println("Seeding craft recipes...")
+                
+                RecipesSeeder.clearRecipeData()
+                RecipesSeeder.seedBasicMaterials()
+                
+                val materialRecipes = Seeder.loadMaterialRecipesFromFile(
+                    Path.of("seed-data/materials-recipes.json")
+                )
+                RecipesSeeder.seedMaterialRecipes(materialRecipes)
+                
+                val grades = listOf("D", "C", "B", "A", "S")
+                grades.forEach { grade ->
+                    val withCrystals = Seeder.loadGradeRecipesFromFile(
+                        Path.of("seed-data/by_grade/${grade}_grade_gear_rp_with_crystals.json")
+                    )
+                    RecipesSeeder.seedEquipmentRecipes(withCrystals)
+                }
+                
+                println("Craft recipe seeding completed.")
 
                 println("Seeding completed.")
             }
@@ -465,5 +492,6 @@ fun buildCli(): CliktCommand = Root().subcommands(
     GroupLootItemsList(),
     UpdatePricesCommand(),
     FarmAnalysis(),
-    GetItemPrices()
+    GetItemPrices(),
+    CrystalAnalysisCommand()
 )
