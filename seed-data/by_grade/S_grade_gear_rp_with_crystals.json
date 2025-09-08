@@ -1,6 +1,6 @@
 {
   "grade": "S",
-  "count": 56,
+  "count": 54,
   "recipes": [
     {
       "name": "mk_forgotten_blade_i",
@@ -462,120 +462,6 @@
       "mp_consume": 225,
       "success_rate": 100,
       "item_id": 6888,
-      "iscommonrecipe": 0,
-      "crystal_count": 2440,
-      "crystal_type": "s"
-    },
-    {
-      "name": "mk_shining_bow_i",
-      "id": 634,
-      "level": 9,
-      "material": [
-        {
-          "item": "rp_shining_bow_i",
-          "quantity": 1
-        },
-        {
-          "item": "shining_bow_shaft",
-          "quantity": 17
-        },
-        {
-          "item": "warsmith_holder",
-          "quantity": 4
-        },
-        {
-          "item": "mithirl_alloy",
-          "quantity": 375
-        },
-        {
-          "item": "synthesis_cokes",
-          "quantity": 75
-        },
-        {
-          "item": "reinforcing_plate",
-          "quantity": 150
-        },
-        {
-          "item": "enria",
-          "quantity": 75
-        },
-        {
-          "item": "crystal_s",
-          "quantity": 212
-        },
-        {
-          "item": "gemstone_s",
-          "quantity": 43
-        }
-      ],
-      "catalyst": [],
-      "product": [
-        {
-          "item": "shining_bow",
-          "quantity": 1
-        }
-      ],
-      "npc_fee": [],
-      "mp_consume": 225,
-      "success_rate": 60,
-      "item_id": 6889,
-      "iscommonrecipe": 0,
-      "crystal_count": 2440,
-      "crystal_type": "s"
-    },
-    {
-      "name": "mk_shining_bow_ii",
-      "id": 635,
-      "level": 9,
-      "material": [
-        {
-          "item": "rp_shining_bow",
-          "quantity": 1
-        },
-        {
-          "item": "shining_bow_shaft",
-          "quantity": 17
-        },
-        {
-          "item": "warsmith_holder",
-          "quantity": 8
-        },
-        {
-          "item": "mithirl_alloy",
-          "quantity": 695
-        },
-        {
-          "item": "synthesis_cokes",
-          "quantity": 139
-        },
-        {
-          "item": "reinforcing_plate",
-          "quantity": 278
-        },
-        {
-          "item": "enria",
-          "quantity": 139
-        },
-        {
-          "item": "crystal_s",
-          "quantity": 397
-        },
-        {
-          "item": "gemstone_s",
-          "quantity": 43
-        }
-      ],
-      "catalyst": [],
-      "product": [
-        {
-          "item": "shining_bow",
-          "quantity": 1
-        }
-      ],
-      "npc_fee": [],
-      "mp_consume": 225,
-      "success_rate": 100,
-      "item_id": 6890,
       "iscommonrecipe": 0,
       "crystal_count": 2440,
       "crystal_type": "s"
