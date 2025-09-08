@@ -40,6 +40,8 @@ import org.jetbrains.exposed.v1.jdbc.selectAll
 import org.jetbrains.exposed.v1.jdbc.transactions.transaction
 import org.jetbrains.exposed.v1.jdbc.insert
 import org.jetbrains.exposed.v1.jdbc.deleteWhere
+import java.net.URLEncoder
+import java.nio.charset.StandardCharsets
 import java.nio.file.Path
 import kotlin.math.roundToInt
 
@@ -203,9 +205,18 @@ class FarmAnalysis : CliktCommand(name = "farm-analysis", help = "Analyze most p
 
             val lootTypeDesc = if (spoilOnly) " (spoil loot only)" else ""
             println("Top $limit most profitable warrior mobs (levels $minLevel-$maxLevel)$lootTypeDesc:")
-            println("=".repeat(60))
+            println("=".repeat(80))
             topMobs.forEachIndexed { index, mob ->
-                println("${index + 1}. https://l2hub.info/c4/npcs/${mob.name} (Level ${mob.level}) - ${mob.averageIncome.roundToInt()} adena average")
+                val encodedMobName = URLEncoder.encode(mob.name, StandardCharsets.UTF_8.toString())
+                println("${index + 1}. ${mob.name} (Level ${mob.level})")
+                println("   L2Hub Link: https://l2hub.info/c4/npcs/${encodedMobName}")
+                println("   Average income per kill: ${mob.averageIncome.roundToInt()} adena")
+                if (!spoilOnly) {
+                    val corpse = calculateCorpseLootIncome(mob.npcId)
+                    val group = calculateGroupLootIncome(mob.npcId)
+                    println("   Breakdown: corpse ${corpse.roundToInt()} adena + group ${group.roundToInt()} adena")
+                }
+                println()
             }
             
             if (topMobs.isEmpty()) {

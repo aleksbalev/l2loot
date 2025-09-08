@@ -14,6 +14,8 @@ import org.jetbrains.exposed.v1.core.greater
 import org.jetbrains.exposed.v1.core.isNotNull
 import org.jetbrains.exposed.v1.core.like
 import org.jetbrains.exposed.v1.jdbc.selectAll
+import java.net.URLEncoder
+import java.nio.charset.StandardCharsets
 import kotlin.math.roundToInt
 
 data class CrystalEfficiencyResult(
@@ -132,7 +134,9 @@ class CrystalAnalysisCommand : CliktCommand(
         println("=".repeat(80))
         
         results.forEachIndexed { index, result ->
-            println("${index + 1}. ${formatItemName(result.itemName)}")
+            val encodedItemName = URLEncoder.encode(result.itemName, StandardCharsets.UTF_8.toString())
+            println("${index + 1}. ${result.itemName}")
+            println("   Item L2Hub Link: https://l2hub.info/c4/items/${encodedItemName}")
             println("   Crystal price per unit: ${result.pricePerCrystal.roundToInt()} adena")
             println("   Overall crystals count: ${result.crystalsGained}")
             println("   Net crystals count: ${result.netCrystals}")
@@ -144,12 +148,6 @@ class CrystalAnalysisCommand : CliktCommand(
         }
         
         println("💡 Tip: Lower 'crystal price per unit' = better crystal farming efficiency!")
-    }
-    
-    private fun formatItemName(name: String): String {
-        return name.replace("_", " ").split(" ").joinToString(" ") { word ->
-            word.replaceFirstChar { if (it.isLowerCase()) it.titlecase() else it.toString() }
-        }
     }
     
     private fun formatAdena(amount: Int): String {
