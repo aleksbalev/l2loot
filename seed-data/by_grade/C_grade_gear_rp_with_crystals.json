@@ -647,6 +647,56 @@
       "crystal_type": "c"
     },
     {
+      "name": "mk_chain_helmet",
+      "id": 93,
+      "level": 4,
+      "material": [
+        {
+          "item": "chain_helmet_design",
+          "quantity": 8
+        },
+        {
+          "item": "steel_mold",
+          "quantity": 1
+        },
+        {
+          "item": "leather",
+          "quantity": 60
+        },
+        {
+          "item": "crystal_d",
+          "quantity": 45
+        },
+        {
+          "item": "gemstone_d",
+          "quantity": 10
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "chain_helmet",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [
+        {
+          "item": "rp_chain_helmet",
+          "quantity": 1
+        },
+        {
+          "item": "adena",
+          "quantity": 29400
+        }
+      ],
+      "mp_consume": 129,
+      "success_rate": 100,
+      "item_id": 2200,
+      "iscommonrecipe": 0,
+      "crystal_count": 59,
+      "crystal_type": "c"
+    },
+    {
       "name": "mk_chain_mail_shirt",
       "id": 97,
       "level": 4,
@@ -1714,6 +1764,56 @@
       "item_id": 2225,
       "iscommonrecipe": 0,
       "crystal_count": 184,
+      "crystal_type": "c"
+    },
+    {
+      "name": "mk_mithril_boots",
+      "id": 96,
+      "level": 4,
+      "material": [
+        {
+          "item": "mithril_boots_design",
+          "quantity": 8
+        },
+        {
+          "item": "crafted_leather",
+          "quantity": 8
+        },
+        {
+          "item": "high_grade_suede",
+          "quantity": 1
+        },
+        {
+          "item": "crystal_d",
+          "quantity": 40
+        },
+        {
+          "item": "gemstone_d",
+          "quantity": 9
+        }
+      ],
+      "catalyst": [],
+      "product": [
+        {
+          "item": "mithril_boots",
+          "quantity": 1
+        }
+      ],
+      "npc_fee": [
+        {
+          "item": "rp_mithril_boots",
+          "quantity": 1
+        },
+        {
+          "item": "adena",
+          "quantity": 9180
+        }
+      ],
+      "mp_consume": 138,
+      "success_rate": 100,
+      "item_id": 2203,
+      "iscommonrecipe": 0,
+      "crystal_count": 50,
       "crystal_type": "c"
     },
     {
