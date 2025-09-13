@@ -32,8 +32,8 @@ chmod +x install.sh
 ```powershell
 git clone <your-repo-url>
 cd l2_spoil_db
-.\gradlew.bat --version  # Initialize Gradle wrapper (first time only)
-.\install.bat
+.\gradlew.bat build  # Build the project (downloads dependencies)
+.\install.bat        # Set up CLI tool and database
 ```
 
 **That's it!** The setup automatically:

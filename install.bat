@@ -31,33 +31,16 @@ echo Setting up L2Loot in project directory...
 if not exist "%BIN_DIR%" mkdir "%BIN_DIR%"
 if not exist "%PROJECT_DIR%\database" mkdir "%PROJECT_DIR%\database"
 
-REM Gradle wrapper should be ready (user ran gradlew.bat --version already)
-echo Gradle wrapper ready, proceeding with build...
-
-REM Build the application if artifacts don't exist
+REM Check if build artifacts exist (user should have run gradlew.bat build first)
 if not exist "app\build\libs\l2loot.jar" (
-    echo Build artifacts not found. Building application...
-    echo Current directory: %CD%
-    if exist gradlew.bat (
-        echo Using Gradle wrapper...
-        echo Running: gradlew.bat build
-        .\gradlew.bat build
-        if errorlevel 1 (
-            echo Build failed with Gradle wrapper, trying system gradle...
-            gradle build
-        )
-    ) else (
-        echo Using system gradle...
-        gradle build
-    )
-    
-    if not exist "app\build\libs\l2loot.jar" (
-        echo ERROR: Build failed. Please check for build errors.
-        echo Expected jar location: %CD%\app\build\libs\l2loot.jar
-        pause
-        exit /b 1
-    )
+    echo ERROR: Build artifacts not found!
+    echo Please run the following command first:
+    echo   .\gradlew.bat build
+    echo Then run this install script again.
+    pause
+    exit /b 1
 )
+echo Found build artifacts, proceeding with setup...
 
 REM Create wrapper script in project bin directory
 set "WRAPPER_SCRIPT=%BIN_DIR%\l2loot.bat"

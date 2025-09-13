@@ -55,17 +55,17 @@ If someone gave you a folder with L2Loot files, skip to **Part 3**.
 2. **Right-click** in an empty area and select **"Open PowerShell window here"**
 3. **Copy and paste** the following commands one by one (press Enter after each):
 
-**Step 1: Initialize Gradle (downloads Gradle - takes 1-2 minutes)**
+**Step 1: Build the project (downloads dependencies and builds - takes 3-5 minutes)**
 ```powershell
-.\gradlew.bat --version
+.\gradlew.bat build
 ```
-Wait for this to complete. You should see Gradle version information.
+Wait for this to complete. You should see "BUILD SUCCESSFUL" at the end.
 
 **Step 2: Run the setup**
 ```powershell
 .\install.bat
 ```
-Wait for the setup to complete (may take a few minutes). You'll see messages like "Building application..." and "Database initialized successfully".
+Wait for the setup to complete. You'll see messages like "Database initialized successfully".
 
 ✅ **Setup is complete when you see "Setup complete!"**
 
@@ -302,22 +302,18 @@ iron_ore (io): 460
 2. Open PowerShell first, then copy and paste the commands
 3. Right-click in the L2Loot folder and select "Open PowerShell window here"
 
-### "Build failed" during installation
+### "Build artifacts not found" error
 **Solutions**:
-1. Make sure you have internet connection (needed to download Gradle and dependencies)
-2. If you skipped Step 1, run: `.\gradlew.bat --version` first to initialize Gradle
-3. Try running `install.bat` again
-4. Make sure no antivirus is blocking the installation
+1. Make sure you ran Step 1 first: `.\gradlew.bat build`
+2. Wait for the build to complete successfully (you should see "BUILD SUCCESSFUL")
+3. Then run Step 2: `.\install.bat`
 
-### "Gradle is not recognized" or Gradle download fails
+### "Build failed" during gradlew.bat build
 **Solutions**:
-1. Make sure you have internet connection
-2. Try running the Gradle initialization manually by copying and pasting:
-   ```powershell
-   .\gradlew.bat --version
-   ```
-3. Wait for the download to complete (may take 1-2 minutes)
-4. Then copy and paste: `.\install.bat`
+1. Make sure you have internet connection (needed to download dependencies)
+2. Make sure no antivirus is blocking the download
+3. Try running the build command again: `.\gradlew.bat build`
+4. If it keeps failing, try: `.\gradlew.bat clean build`
 
 ## Getting Help
 
