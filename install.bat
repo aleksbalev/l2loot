@@ -10,7 +10,7 @@ REM Check if Java 17+ is installed
 echo Checking Java installation...
 java -version >nul 2>&1
 if %errorlevel% neq 0 (
-    echo [ERROR] Java is not installed or not in PATH.
+    echo ERROR: Java is not installed or not in PATH.
     echo Please install Java 17+ from:
     echo   - Oracle JDK: https://www.oracle.com/java/technologies/downloads/
     echo   - OpenJDK: https://adoptium.net/
@@ -20,7 +20,7 @@ if %errorlevel% neq 0 (
 )
 
 REM Get Java version (simplified check)
-echo [OK] Java found:
+echo OK: Java found:
 java -version 2>&1 | findstr /C:"version"
 
 REM Get current directory (project directory)
@@ -31,36 +31,29 @@ echo Setting up L2Loot in project directory...
 if not exist "%BIN_DIR%" mkdir "%BIN_DIR%"
 if not exist "%PROJECT_DIR%\database" mkdir "%PROJECT_DIR%\database"
 
-REM Initialize Gradle wrapper if needed (first time setup)
-echo Checking Gradle wrapper...
-if exist "gradlew.bat" (
-    call "gradlew.bat" --version >nul 2>&1
-    if errorlevel 1 (
-        echo [INFO] Initializing Gradle wrapper (first time setup)...
-        echo This may take 1-2 minutes to download Gradle.
-        call "gradlew.bat" --version
-        if errorlevel 1 (
-            echo [ERROR] Failed to initialize Gradle wrapper.
-            echo Please ensure you have internet connection and try again.
-            pause
-            exit /b 1
-        )
-    )
-) else (
-    echo [WARNING] gradlew.bat not found, trying with system gradle...
-)
+REM Gradle wrapper should be ready (user ran gradlew.bat --version already)
+echo Gradle wrapper ready, proceeding with build...
 
 REM Build the application if artifacts don't exist
 if not exist "app\build\libs\l2loot.jar" (
     echo Build artifacts not found. Building application...
-    if exist "gradlew.bat" (
-        call "gradlew.bat" build
+    echo Current directory: %CD%
+    if exist gradlew.bat (
+        echo Using Gradle wrapper...
+        echo Running: gradlew.bat build
+        .\gradlew.bat build
+        if errorlevel 1 (
+            echo Build failed with Gradle wrapper, trying system gradle...
+            gradle build
+        )
     ) else (
+        echo Using system gradle...
         gradle build
     )
     
     if not exist "app\build\libs\l2loot.jar" (
-        echo [ERROR] Build failed. Please check for build errors.
+        echo ERROR: Build failed. Please check for build errors.
+        echo Expected jar location: %CD%\app\build\libs\l2loot.jar
         pause
         exit /b 1
     )
@@ -79,12 +72,12 @@ echo Initializing database with NPC and price data...
 cd /D "%PROJECT_DIR%"
 java -jar "app\build\libs\l2loot.jar" --seed-if-empty >nul 2>&1
 if errorlevel 1 (
-    echo [WARNING] Database initialization had issues. You can retry with: .\bin\l2loot.bat --seed-if-empty
+    echo WARNING: Database initialization had issues. You can retry with: .\bin\l2loot.bat --seed-if-empty
 ) else (
-    echo [OK] Database initialized successfully
+    echo OK: Database initialized successfully
 )
 
-echo [OK] L2Loot set up successfully in project directory
+echo OK: L2Loot set up successfully in project directory
 
 echo.
 echo PATH Configuration Options:
@@ -101,7 +94,7 @@ echo.
 echo Option 3: Create a batch file in a directory that's already in PATH
 echo   Create a batch file that calls "%BIN_DIR%\l2loot.bat" %%*
 echo.
-echo [OK] Setup complete!
+echo OK: Setup complete!
 echo.
 echo Quick start:
 echo   .\bin\l2loot.bat --help                    # Show help
