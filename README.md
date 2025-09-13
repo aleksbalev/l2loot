@@ -28,11 +28,11 @@ If you are not able to answer question what is JDK or JRE, and don't know how to
 ### Step 2: Install Java
 1. **Double-click** the downloaded file
 2. Accept Terms of Service
-[](https://github.com/aleksbalev/l2loot/assets/temurin_terms.png)
+![terms](https://github.com/aleksbalev/l2loot/blob/main/assets/temurin_terms.png?raw=true)
 3. Choose whatever installation scope you want
-[](https://github.com/aleksbalev/l2loot/assets/installation_scope.png)
+![installation scope](https://github.com/aleksbalev/l2loot/blob/main/assets/installation_scope.png?raw=true)
 4. IMPORTANT STEP: For Set Or Overwrite JAVA_HOME variable set option that is on the picture below
-[](https://github.com/aleksbalev/l2loot/assets/custom_setup.png)
+![custom setup](https://github.com/aleksbalev/l2loot/blob/main/assets/custom_setup.png?raw=true)
 5. Click **"Finish"** when done
 6. Restart your computer
 
