@@ -19,7 +19,7 @@ L2Loot needs Java to run. Here's how to install it:
 ### Step 1: Download Java
 1. Go to https://adoptium.net/
 2. Click the big **"Download"** button
-3. This will download a file like `OpenJDK17U-jdk_x64_windows_hotspot_17.0.x.x.msi`
+3. This will download a file like `OpenJDK17U-jdk_x64_windows_hotspot_21.0.x.x.msi`
 
 ### Step 2: Install Java
 1. **Double-click** the downloaded file
@@ -32,7 +32,7 @@ L2Loot needs Java to run. Here's how to install it:
 2. Type `cmd` and press **Enter**
 3. In the black window that opens, type: `java -version`
 4. Press **Enter**
-5. You should see something like `openjdk version "17.0.x"`
+5. You should see something like `openjdk version "21.0.x"`
 
 ✅ **If you see a version number, Java is installed correctly!**
 ❌ **If you see "java is not recognized", restart your computer and try again**
@@ -43,17 +43,20 @@ L2Loot needs Java to run. Here's how to install it:
 If someone gave you a folder with L2Loot files, skip to **Part 3**.
 
 ### Option B: Download from GitHub (if available)
-1. Go to the L2Loot GitHub page
+1. Go to the [L2Loot GitHub](https://github.com/aleksbalev/l2loot) page (you might be already here)
 2. Click the green **"Code"** button
 3. Click **"Download ZIP"**
 4. Extract the ZIP file to a folder like `C:\L2Loot\`
 
 ## Part 3: Setting Up L2Loot
 
-### Step 1: Open the L2Loot Folder
-1. Open **File Explorer** (Windows Key + E)
-2. Navigate to where you put the L2Loot files
-3. You should see files like `install.bat`, `TECH_README.md`, etc.
+
+### Step 1: Initialize Gradle (First Time Only)
+1. Go to the l2loot-main folder
+2. **Right-click** in an empty area and select **"Open PowerShell window here"** (or **"Open command window here"**)
+3. In the command window, type: `.\gradlew.bat --version`
+4. Press **Enter** and wait (this downloads Gradle - may take 1-2 minutes)
+5. You should see Gradle version information when it's done
 
 ### Step 2: Run the Setup
 1. **Right-click** on `install.bat`
@@ -289,9 +292,20 @@ iron_ore (io): 460
 
 ### "Build failed" during installation
 **Solutions**:
-1. Make sure you have internet connection (needed to download dependencies)
-2. Try running `install.bat` again
-3. Make sure no antivirus is blocking the installation
+1. Make sure you have internet connection (needed to download Gradle and dependencies)
+2. If you skipped Step 1, run: `.\gradlew.bat --version` first to initialize Gradle
+3. Try running `install.bat` again
+4. Make sure no antivirus is blocking the installation
+
+### "Gradle is not recognized" or Gradle download fails
+**Solutions**:
+1. Make sure you have internet connection
+2. Try running the Gradle initialization manually:
+   ```cmd
+   .\gradlew.bat --version
+   ```
+3. Wait for the download to complete (may take 1-2 minutes)
+4. Then run `install.bat`
 
 ## Getting Help
 

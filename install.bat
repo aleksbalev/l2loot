@@ -30,6 +30,23 @@ echo Setting up L2Loot in project directory...
 if not exist "%BIN_DIR%" mkdir "%BIN_DIR%"
 if not exist "%PROJECT_DIR%\database" mkdir "%PROJECT_DIR%\database"
 
+REM Initialize Gradle wrapper if needed (first time setup)
+if exist "gradlew.bat" (
+    echo Checking Gradle wrapper...
+    call gradlew.bat --version >nul 2>&1
+    if %errorlevel% neq 0 (
+        echo [INFO] Initializing Gradle wrapper (first time setup)...
+        echo This may take 1-2 minutes to download Gradle.
+        call gradlew.bat --version
+        if %errorlevel% neq 0 (
+            echo [ERROR] Failed to initialize Gradle wrapper.
+            echo Please ensure you have internet connection and try again.
+            pause
+            exit /b 1
+        )
+    )
+)
+
 REM Build the application if artifacts don't exist
 if not exist "app\build\libs\l2loot.jar" (
     echo Build artifacts not found. Building application...

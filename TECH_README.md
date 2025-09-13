@@ -32,6 +32,7 @@ chmod +x install.sh
 ```cmd
 git clone <your-repo-url>
 cd l2_spoil_db
+gradlew.bat --version  # Initialize Gradle wrapper (first time only)
 install.bat
 ```
 
