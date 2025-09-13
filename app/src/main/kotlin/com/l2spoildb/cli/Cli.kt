@@ -59,8 +59,8 @@ class Root : CliktCommand(
     private val seedIfEmpty by option("--seed-if-empty", help = "Seed from JSON if tables empty").flag(default = false)
     private val jsonPath by option(
         "--json",
-        help = "Path to npc_loot_data_complete.json"
-    ).default("seed-data/npc_loot_data_complete.json")
+        help = "Path to npc_loot_data.json"
+    ).default("seed-data/npc_loot_data.json")
 
     override fun run() {
         if (seedIfEmpty || currentContext.invokedSubcommand != null) {
@@ -152,6 +152,7 @@ data class MobProfitability(
     val npcId: Int,
     val name: String,
     val level: Int,
+    val mobHp: String,
     val averageIncome: Double
 )
 
@@ -188,6 +189,7 @@ class FarmAnalysis : CliktCommand(name = "farm-analysis", help = "Analyze most p
                 val npcId = npc[Npcs.id]
                 val npcName = npc[Npcs.name]
                 val npcLevel = npc[Npcs.level]
+                val mobHp = npc[Npcs.mobHp]
 
                 val corpseLootIncome = calculateCorpseLootIncome(npcId)
                 val groupLootIncome = if (spoilOnly) 0.0 else calculateGroupLootIncome(npcId)
@@ -195,7 +197,7 @@ class FarmAnalysis : CliktCommand(name = "farm-analysis", help = "Analyze most p
                 val totalIncome = corpseLootIncome + groupLootIncome
                 
                 if (totalIncome > 0) {
-                    mobProfitabilities.add(MobProfitability(npcId, npcName, npcLevel, totalIncome))
+                    mobProfitabilities.add(MobProfitability(npcId, npcName, npcLevel, mobHp, totalIncome))
                 }
             }
 
@@ -209,6 +211,7 @@ class FarmAnalysis : CliktCommand(name = "farm-analysis", help = "Analyze most p
             topMobs.forEachIndexed { index, mob ->
                 val encodedMobName = URLEncoder.encode(mob.name, StandardCharsets.UTF_8.toString())
                 println("${index + 1}. ${mob.name} (Level ${mob.level})")
+                println("   Mob HP rate: ${mob.mobHp}")
                 println("   L2Hub Link: https://l2hub.info/c4/npcs/${encodedMobName}")
                 println("   Average income per kill: ${mob.averageIncome.roundToInt()} adena")
                 if (!spoilOnly) {

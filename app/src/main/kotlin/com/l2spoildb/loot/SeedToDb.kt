@@ -28,6 +28,7 @@ object NpcLootSeeder {
                         it[level] = npc.level
                         it[name] = nameVal
                         it[npcBegin] = npc.npcBegin
+                        it[mobHp] = npc.mobHp
                     } get Npcs.id
 
                     npc.corpseMakeList.forEach { loot ->

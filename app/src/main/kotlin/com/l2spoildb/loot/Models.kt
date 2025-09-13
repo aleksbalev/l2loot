@@ -13,6 +13,7 @@ data class NpcEntry(
     val level: Int,
     @SerialName("npc_name") val npcName: List<String>,
     @SerialName("npc_begin") val npcBegin: String,
+    @SerialName("mobHp") val mobHp: String,
     @SerialName("corpse_make_list") val corpseMakeList: List<LootItem> = emptyList(),
     @SerialName("additional_make_multi_list") val additionalMakeMultiList: List<LootGroup> = emptyList()
 )

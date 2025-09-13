@@ -7,6 +7,7 @@ object Npcs : Table("npcs") {
     val level = integer("level")
     val name = varchar("name", 128)
     val npcBegin = varchar("npc_begin", 64)
+    val mobHp = varchar("mob_hp", 64)
     override val primaryKey = PrimaryKey(id)
 }
 
