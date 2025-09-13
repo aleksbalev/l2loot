@@ -73,7 +73,7 @@ If someone gave you a folder with L2Loot files, skip to **Part 3**.
 
 1. Go to your L2Loot (l2loot-main) folder
 2. You should be able to see a file called `gradlew.bat` and `install.bat`
-3. Press CTRL + L and type powershell to open a terminal window in this folder
+3. Press CTRL + L and type **powershell** and press **Enter** to open a terminal window in this folder
 
 **Copy and paste** the following commands one by one (press Enter after each):
 
