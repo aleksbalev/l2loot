@@ -19,7 +19,7 @@ L2Loot needs Java to run. Here's how to install it:
 ### Step 1: Download Java
 1. Go to https://adoptium.net/
 2. Click the big **"Download"** button
-3. This will download a file like `OpenJDK17U-jdk_x64_windows_hotspot_21.0.x.x.msi`
+3. This will download a file like `OpenJDK21U-jdk_x64_windows_hotspot_21.0.x.x.msi`
 
 ### Step 2: Install Java
 1. **Double-click** the downloaded file
@@ -52,7 +52,7 @@ If someone gave you a folder with L2Loot files, skip to **Part 3**.
 
 ### Complete Setup in PowerShell
 1. Go to the l2loot-main folder
-2. **Right-click** in an empty area and select **"Open PowerShell window here"**
+2. **Right-click** in an empty area and select **"Open in Terminal"** it should open terminal in your current folder
 3. **Copy and paste** the following commands one by one (press Enter after each):
 
 **Step 1: Build the project (downloads dependencies and builds - takes 3-5 minutes)**
@@ -120,17 +120,30 @@ If you still have the PowerShell window open from setup, great! If not:
 
 When you run a farm analysis, you'll see something like:
 ```
-Top 5 most profitable warrior mobs (levels 30-35):
-============================================================
-1. https://l2hub.info/c4/npcs/pit_tomb_corpse_eater (Level 31) - 7832 adena average
-2. https://l2hub.info/c4/npcs/pit_tomb_jaguar (Level 28) - 3303 adena average
-3. https://l2hub.info/c4/npcs/ol_mahum_chief_leader (Level 30) - 2215 adena average
+Top 5 most profitable warrior mobs (levels 20-40):
+================================================================================
+1. pit_tomb_corpse_eater (Level 31)
+   L2Hub Link: https://l2hub.info/c4/npcs/pit_tomb_corpse_eater
+   Average income per kill: 7100 adena
+   Breakdown: corpse 6750 adena + group 349 adena
+
+2. vault_sentinel (Level 35)
+   L2Hub Link: https://l2hub.info/c4/npcs/vault_sentinel
+   Average income per kill: 5862 adena
+   Breakdown: corpse 5457 adena + group 404 adena
+
+3. lith_warlord (Level 36)
+   L2Hub Link: https://l2hub.info/c4/npcs/lith_warlord
+   Average income per kill: 3672 adena
+   Breakdown: corpse 3492 adena + group 180 adena
 ```
 
-This means:
-- **Monster Name**: Click the link to see more info about the monster
+This shows you:
+- **Monster Name**: The NPC you should hunt
 - **Level**: The monster's level
-- **Average Income**: How much adena you can expect per kill (including spoil + drops)
+- **L2Hub Link**: Click to see detailed monster information
+- **Average Income**: Total adena you can expect per kill
+- **Breakdown**: How much comes from spoil (corpse) vs regular drops (group)
 
 ## Part 5: Updating Item Prices
 
