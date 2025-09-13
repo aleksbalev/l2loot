@@ -1,178 +1,143 @@
-# L2Loot - Lineage II Spoil Profit Calculator
+# L2Loot - Complete Setup Guide for Windows Users 🪟
 
-**Find the best spoil spots for your fellow Dwarfs!** 🛠️
+**A step-by-step guide for Windows users with no programming experience**
 
-L2Loot is a command-line tool that helps Spoilers find the most profitable monsters to farm. Analyze Mobs loot tables, calculate expected income, and discover the richest hunting grounds in Aden.
+This guide will help you install and use L2Loot, a tool that helps Lineage II Spoilers find the most profitable monsters to farm. No programming knowledge required!
 
-## Features
+## What is L2Loot?
 
-- 📊 **Profit Analysis**: Find the most profitable Mobs within your level range
-- 💰 **Smart Calculations**: Considers both spoil loot and regular drops with current market prices
-- 🔧 **Price Updates**: Keep item prices current with market changes
-- ⚡ **Fast Queries**: Instantly search through 6,334+ NPCs and their loot tables
+L2Loot is a tool that:
+- 📊 Shows you which monsters give the best loot for your level
+- 💰 Calculates how much money you can make from spoiling
+- 🔧 Lets you update item prices to keep calculations accurate
+- ⚡ Searches through 6,334+ monsters instantly
 
-## Requirements
+## Part 1: Installing Java (Required)
 
-- **Java 17+** (OpenJDK or Oracle JDK)
-- **OS**: Windows, macOS, or Linux
+L2Loot needs Java to run. Here's how to install it:
 
-## Quick Setup
+### Step 1: Download Java
+1. Go to https://adoptium.net/
+2. Click the big **"Download"** button
+3. This will download a file like `OpenJDK17U-jdk_x64_windows_hotspot_17.0.x.x.msi`
 
-**Download and install in one command:**
+### Step 2: Install Java
+1. **Double-click** the downloaded file
+2. Click **"Next"** through all the screens
+3. Click **"Install"** when asked
+4. Click **"Finish"** when done
 
-### Unix/Linux/macOS
-```bash
-git clone <your-repo-url>
-cd l2_spoil_db
-chmod +x install.sh
-./install.sh
-```
+### Step 3: Verify Java is Installed
+1. Press **Windows Key + R**
+2. Type `cmd` and press **Enter**
+3. In the black window that opens, type: `java -version`
+4. Press **Enter**
+5. You should see something like `openjdk version "17.0.x"`
 
-### Windows
+✅ **If you see a version number, Java is installed correctly!**
+❌ **If you see "java is not recognized", restart your computer and try again**
+
+## Part 2: Getting L2Loot
+
+### Option A: If you have the files already
+If someone gave you a folder with L2Loot files, skip to **Part 3**.
+
+### Option B: Download from GitHub (if available)
+1. Go to the L2Loot GitHub page
+2. Click the green **"Code"** button
+3. Click **"Download ZIP"**
+4. Extract the ZIP file to a folder like `C:\L2Loot\`
+
+## Part 3: Setting Up L2Loot
+
+### Step 1: Open the L2Loot Folder
+1. Open **File Explorer** (Windows Key + E)
+2. Navigate to where you put the L2Loot files
+3. You should see files like `install.bat`, `TECH_README.md`, etc.
+
+### Step 2: Run the Setup
+1. **Right-click** on `install.bat`
+2. Select **"Run as administrator"**
+3. If Windows asks "Do you want to allow this app to make changes?", click **"Yes"**
+4. Wait for the setup to complete (this may take a few minutes)
+5. You'll see messages like "Building application..." and "Database initialized successfully"
+6. Press any key when it says "Press any key to continue..."
+
+✅ **Setup is complete when you see "Setup complete!"**
+
+## Part 4: Using L2Loot
+
+### Opening the Command Prompt in the Right Place
+1. Open **File Explorer** and go to your L2Loot folder
+2. Click in the **address bar** (where it shows the folder path)
+3. Type `cmd` and press **Enter**
+4. A black command window will open in the right location
+
+### Basic Commands
+
+#### Find the Most Profitable Monsters for Your Level
 ```cmd
-git clone <your-repo-url>
-cd l2_spoil_db
-install.bat
-```
-
-**That's it!** The setup automatically:
-- Builds the application
-- Creates database with 6,334 NPCs and loot data
-- Loads item prices for profit calculations
-- Sets up the `l2loot` command
-
-## Usage
-
-### Find Profitable Spoil Spots
-
-**Unix/Linux/macOS:**
-```bash
-# Find top 10 profitable mobs for levels 20-40
-./bin/l2loot farm-analysis --min-level 20 --max-level 40
-
-# Focus on your exact level range
-./bin/l2loot farm-analysis --min-level 28 --max-level 33 --limit 5
-
-# Spoil-only income (excludes regular drops)
-./bin/l2loot farm-analysis --min-level 30 --max-level 50 --spoil-only
-```
-
-**Windows:**
-```cmd
-# Find top 10 profitable mobs for levels 20-40
 .\bin\l2loot.bat farm-analysis --min-level 20 --max-level 40
+```
+**Replace 20 and 40 with your character's level range**
 
-# Focus on your exact level range
-.\bin\l2loot.bat farm-analysis --min-level 28 --max-level 33 --limit 5
-
-# Spoil-only income (excludes regular drops)
-.\bin\l2loot.bat farm-analysis --min-level 30 --max-level 50 --spoil-only
+**Example for level 30-35 character:**
+```cmd
+.\bin\l2loot.bat farm-analysis --min-level 30 --max-level 35
 ```
 
-**Example output:**
+#### Show Only Top 5 Results
+```cmd
+.\bin\l2loot.bat farm-analysis --min-level 30 --max-level 35 --limit 5
 ```
-Top 5 most profitable warrior mobs (levels 28-33):
+
+#### Show Only Spoil Income (No Regular Drops)
+```cmd
+.\bin\l2loot.bat farm-analysis --min-level 30 --max-level 35 --spoil-only
+```
+
+#### Search for Specific Monsters
+```cmd
+.\bin\l2loot.bat npcs --name "orc"
+```
+
+#### Find Monsters in a Level Range
+```cmd
+.\bin\l2loot.bat npcs --min-level 25 --max-level 35
+```
+
+#### See All Available Commands
+```cmd
+.\bin\l2loot.bat --help
+```
+
+### Understanding the Results
+
+When you run a farm analysis, you'll see something like:
+```
+Top 5 most profitable warrior mobs (levels 30-35):
 ============================================================
 1. https://l2hub.info/c4/npcs/pit_tomb_corpse_eater (Level 31) - 7832 adena average
 2. https://l2hub.info/c4/npcs/pit_tomb_jaguar (Level 28) - 3303 adena average
 3. https://l2hub.info/c4/npcs/ol_mahum_chief_leader (Level 30) - 2215 adena average
-4. https://l2hub.info/c4/npcs/water_observer (Level 31) - 1756 adena average
-5. https://l2hub.info/c4/npcs/sucubuss_kanil (Level 32) - 1755 adena average
 ```
 
-### Browse NPCs and Loot
+This means:
+- **Monster Name**: Click the link to see more info about the monster
+- **Level**: The monster's level
+- **Average Income**: How much adena you can expect per kill (including spoil + drops)
 
-**Unix/Linux/macOS:**
-```bash
-# Search for specific NPCs
-./bin/l2loot npcs --name "orc"
-./bin/l2loot npcs --min-level 25 --max-level 35
+## Part 5: Updating Item Prices
 
-# View loot tables
-./bin/l2loot corpse-loot        # Spoil loot
-./bin/l2loot group-loot-items   # Regular drops
-```
+The tool comes with default prices, but you should update them with current server prices for accurate calculations.
 
-**Windows:**
-```cmd
-# Search for specific NPCs
-.\bin\l2loot.bat npcs --name "orc"
-.\bin\l2loot.bat npcs --min-level 25 --max-level 35
+### Step 1: Open the Price File
+1. In your L2Loot folder, go to the `seed-data` folder
+2. **Right-click** on `sellable_items.json`
+3. Select **"Open with"** → **"Notepad"** (or Notepad++ if you have it)
 
-# View loot tables
-.\bin\l2loot.bat corpse-loot        # Spoil loot
-.\bin\l2loot.bat group-loot-items   # Regular drops
-```
-
-### Update Market Prices
-
-Keep your profit calculations current:
-
-**Unix/Linux/macOS:**
-```bash
-# Edit item prices
-nano seed-data/sellable_items.json
-
-# Update database with new prices
-./bin/l2loot update-prices
-```
-
-**Windows:**
-```cmd
-# Edit item prices (use Notepad++ or any editor)
-notepad seed-data\sellable_items.json
-
-# Update database with new prices
-.\bin\l2loot.bat update-prices
-```
-
-## Prices
-
-Prices have to be added manually, there is no API that I can use for dynamic and actual updates of prices, so it is ont you to keep it fresh.
-
-Edit `seed-data/sellable_items.json` to update item prices:
-
-| Item Name           | Item ID            |
-|---------------------|--------------------|
-| Adamantite Nugget   | admantite_nugget   |
-| Animal Bone         | animal_bone        |
-| Animal Skin         | animal_skin        |
-| Asofe               | asofe              |
-| Braided Hemp        | braided_hemp       |
-| Charcoal            | charcoal           |
-| Coal                | coal               |
-| Coarse Bone Powder  | coarse_bone_powder |
-| Cokes               | cokes              |
-| Cord                | cord               |
-| Crafted Leather     | crafted_leather    |
-| Durable Metal Plate | reinforcing_plate  |
-| EAA                 | scrl_of_ench_am_a  |
-| EAB                 | scrl_of_ench_am_b  |
-| EAC                 | scrl_of_ench_am_c  |
-| EAD                 | scrl_of_ench_am_d  |
-| EAS                 | scrl_of_ench_am_s  |
-| Enria               | enria              |
-| EWA                 | scrl_of_ench_wp_a  |
-| EWB                 | scrl_of_ench_wp_b  |
-| EWC                 | scrl_of_ench_wp_c  |
-| EWD                 | scrl_of_ench_wp_d  |
-| EWS                 | scrl_of_ench_wp_s  |
-| High Grade Suede    | high_grade_suede   |
-| Iron Ore            | iron_ore           |
-| Leather             | leather            |
-| Metal Hardener      | reinforcing_agent  |
-| Metallic Fiber      | metallic_fiber     |
-| Metallic Thread     | iron_thread        |
-| Mithril Ore         | mithril_ore        |
-| Mold Glue           | mold_glue          |
-| Mold Hardener       | mold_hardener      |
-| Mold Lubricant      | mold_lubricant     |
-| Oriharukon Ore      | oriharukon_ore     |
-| Steel               | steel              |
-| Stone of Purity     | stone_of_purity    |
-| Thons               | thons              |
-| Varnish             | varnish            |
-
+### Step 2: Edit Prices
+The file looks like this:
 ```json
 {
   "items": [
@@ -188,46 +153,154 @@ Edit `seed-data/sellable_items.json` to update item prices:
 }
 ```
 
-## Commands Reference
+**To change a price:**
+1. Find the item you want to update
+2. Change the number after `"price":`
+3. **Save the file** (Ctrl + S)
 
-| Command | Description | Options |
-|---------|-------------|---------|
-| `farm-analysis` | Find most profitable NPCs | `--min-level`, `--max-level`, `--limit`, `--spoil-only` |
-| `npcs` | Browse NPC database | `--name`, `--min-level`, `--max-level`, `--limit` |
-| `corpse-loot` | View spoil loot tables | - |
-| `group-loot-items` | View regular drop tables | - |
-| `update-prices` | Refresh item prices | `--json` |
-
-## File Structure
-
-```
-l2_spoil_db/
-├── bin/l2loot          # Your spoil calculator
-├── database/           # NPC and loot data  
-├── seed-data/          # Edit item prices here
-│   └── sellable_items.json
-└── README.md
+### Step 3: Update the Database
+After editing prices, run this command:
+```cmd
+.\bin\l2loot.bat update-prices
 ```
 
-## Adding to PATH (Optional)
+### Complete Items List with IDs and Abbreviations
+| Item Name | Item ID in File | Abbreviation |
+|-----------|----------------|--------------|
+| Adamantite Nugget | admantite_nugget | an |
+| Animal Bone | animal_bone | ab |
+| Animal Skin | animal_skin | as |
+| Asofe | asofe | asofe |
+| Braided Hemp | braided_hemp | bh |
+| Charcoal | charcoal | charcoal |
+| Coal | coal | coal |
+| Coarse Bone Powder | coarse_bone_powder | cbp |
+| Cokes | cokes | cokes |
+| Cord | cord | cord |
+| Crafted Leather | crafted_leather | cl |
+| Crystal A | crystal_a | ax |
+| Crystal B | crystal_b | bx |
+| Crystal C | crystal_c | cx |
+| Crystal D | crystal_d | dx |
+| Crystal S | crystal_s | sx |
+| Durable Metal Plate | reinforcing_plate | dmp |
+| EAA | scrl_of_ench_am_a | eaa |
+| EAB | scrl_of_ench_am_b | eab |
+| EAC | scrl_of_ench_am_c | eac |
+| EAD | scrl_of_ench_am_d | ead |
+| EAS | scrl_of_ench_am_s | eas |
+| Enria | enria | enria |
+| EWA | scrl_of_ench_wp_a | ewa |
+| EWB | scrl_of_ench_wp_b | ewb |
+| EWC | scrl_of_ench_wp_c | ewc |
+| EWD | scrl_of_ench_wp_d | ewd |
+| EWS | scrl_of_ench_wp_s | ews |
+| High Grade Suede | high_grade_suede | hgs |
+| Iron Ore | iron_ore | io |
+| Leather | leather | leather |
+| Metal Hardener | reinforcing_agent | mh |
+| Metallic Fiber | metallic_fiber | mf |
+| Metallic Thread | iron_thread | mt |
+| Mithril Ore | mithril_ore | mo |
+| Mold Glue | mold_glue | mg |
+| Mold Hardener | mold_hardener | moldh |
+| Mold Lubricant | mold_lubricant | ml |
+| Oriharukon Ore | oriharukon_ore | oo |
+| Silver Nugget | silver_nugget | sn |
+| Steel | steel | steel |
+| Stem | stem | stem |
+| Stone of Purity | stone_of_purity | sop |
+| Suede | suede | suede |
+| Thons | thons | thons |
+| Thread | thread | thread |
+| Varnish | varnish | varnish |
 
-To use `l2loot` from anywhere:
+*You can also see current prices by running: `.\bin\l2loot.bat get-item-prices`*
 
-**Unix/Linux/macOS:**
-```bash
-echo 'export PATH="/path/to/l2_spoil_db/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
+### Checking Current Item Prices
+
+To see what prices are currently set in the database:
+
+```cmd
+# See all item prices
+.\bin\l2loot.bat get-item-prices
+
+# Check specific items (use abbreviations)
+.\bin\l2loot.bat get-item-prices --item-abbr ab,steel,io
 ```
 
-**Windows:**
-Add `C:\path\to\l2_spoil_db\bin` to your System PATH via Environment Variables.
+**Example output:**
+```
+animal_bone (ab): 1300
+steel (steel): 10000  
+iron_ore (io): 460
+```
+
+## Part 6: Quick Reference
+
+### Most Common Commands
+```cmd
+# Find profitable spots for your level (change the numbers!)
+.\bin\l2loot.bat farm-analysis --min-level YOUR_MIN_LEVEL --max-level YOUR_MAX_LEVEL
+
+# Update prices after editing the price file
+.\bin\l2loot.bat update-prices
+
+# Check current item prices
+.\bin\l2loot.bat get-item-prices --item-abbr ab,steel,io
+
+# Search for monsters by name
+.\bin\l2loot.bat npcs --name "MONSTER_NAME"
+
+# Get help
+.\bin\l2loot.bat --help
+```
+
+### File Locations
+- **Main folder**: Where you extracted L2Loot
+- **Price file**: `seed-data\sellable_items.json`
+- **Database**: `database\` folder (don't touch these files)
 
 ## Troubleshooting
 
-**"Java not found"** → Install Java 17+ from [Adoptium](https://adoptium.net/)  
-**"No profitable mobs found"** → Try a wider level range or update item prices  
-**Command not found** → Run from project directory: `./bin/l2loot`
+### "Java is not recognized as an internal or external command"
+**Solution**: Java is not installed or not found
+1. Install Java following Part 1 of this guide
+2. Restart your computer
+3. Try again
+
+### "The system cannot find the path specified"
+**Solution**: You're not in the right folder
+1. Make sure you opened the command prompt in the L2Loot folder
+2. You should see files like `install.bat` and `TECH_README.md` in the folder
+3. Follow the "Opening the Command Prompt in the Right Place" section
+
+### "Access is denied" when running install.bat
+**Solution**: Run as administrator
+1. Right-click on `install.bat`
+2. Select "Run as administrator"
+3. Click "Yes" when Windows asks for permission
+
+### The command window closes immediately
+**Solution**: 
+1. Don't double-click the .bat files
+2. Open command prompt first, then run the commands
+3. Follow the "Opening the Command Prompt in the Right Place" section
+
+### "Build failed" during installation
+**Solutions**:
+1. Make sure you have internet connection (needed to download dependencies)
+2. Try running `install.bat` again
+3. Make sure no antivirus is blocking the installation
+
+## Getting Help
+
+If you're still having trouble:
+1. Make sure you followed each step exactly as written
+2. Try restarting your computer and running the setup again
 
 ---
 
-*Happy spoiling, fellow Dwarf! May your pouches be heavy with adena.* ⛏️💰
+**Happy spoiling! May your pouches be heavy with adena!** ⛏️💰
+
+*This guide was written for complete beginners. If you're comfortable with programming, see the main TECH_README.md for shorter instructions.*
