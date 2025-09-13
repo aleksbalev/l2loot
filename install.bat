@@ -1,4 +1,5 @@
 @echo off
+setlocal enabledelayedexpansion
 REM L2Loot Setup Script for Windows
 REM This script sets up the L2Loot CLI tool in the project directory
 
@@ -31,27 +32,29 @@ if not exist "%BIN_DIR%" mkdir "%BIN_DIR%"
 if not exist "%PROJECT_DIR%\database" mkdir "%PROJECT_DIR%\database"
 
 REM Initialize Gradle wrapper if needed (first time setup)
+echo Checking Gradle wrapper...
 if exist "gradlew.bat" (
-    echo Checking Gradle wrapper...
-    call gradlew.bat --version >nul 2>&1
-    if %errorlevel% neq 0 (
+    call "gradlew.bat" --version >nul 2>&1
+    if errorlevel 1 (
         echo [INFO] Initializing Gradle wrapper (first time setup)...
         echo This may take 1-2 minutes to download Gradle.
-        call gradlew.bat --version
-        if %errorlevel% neq 0 (
+        call "gradlew.bat" --version
+        if errorlevel 1 (
             echo [ERROR] Failed to initialize Gradle wrapper.
             echo Please ensure you have internet connection and try again.
             pause
             exit /b 1
         )
     )
+) else (
+    echo [WARNING] gradlew.bat not found, trying with system gradle...
 )
 
 REM Build the application if artifacts don't exist
 if not exist "app\build\libs\l2loot.jar" (
     echo Build artifacts not found. Building application...
     if exist "gradlew.bat" (
-        call gradlew.bat build
+        call "gradlew.bat" build
     ) else (
         gradle build
     )
@@ -75,10 +78,10 @@ REM Initialize database with seed data
 echo Initializing database with NPC and price data...
 cd /D "%PROJECT_DIR%"
 java -jar "app\build\libs\l2loot.jar" --seed-if-empty >nul 2>&1
-if %errorlevel% equ 0 (
-    echo [OK] Database initialized successfully
-) else (
+if errorlevel 1 (
     echo [WARNING] Database initialization had issues. You can retry with: .\bin\l2loot.bat --seed-if-empty
+) else (
+    echo [OK] Database initialized successfully
 )
 
 echo [OK] L2Loot set up successfully in project directory

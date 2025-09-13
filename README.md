@@ -50,67 +50,69 @@ If someone gave you a folder with L2Loot files, skip to **Part 3**.
 
 ## Part 3: Setting Up L2Loot
 
-
-### Step 1: Initialize Gradle (First Time Only)
+### Complete Setup in PowerShell
 1. Go to the l2loot-main folder
-2. **Right-click** in an empty area and select **"Open PowerShell window here"** (or **"Open command window here"**)
-3. In the command window, type: `.\gradlew.bat --version`
-4. Press **Enter** and wait (this downloads Gradle - may take 1-2 minutes)
-5. You should see Gradle version information when it's done
+2. **Right-click** in an empty area and select **"Open PowerShell window here"**
+3. **Copy and paste** the following commands one by one (press Enter after each):
 
-### Step 2: Run the Setup
-1. **Right-click** on `install.bat`
-2. Select **"Run as administrator"**
-3. If Windows asks "Do you want to allow this app to make changes?", click **"Yes"**
-4. Wait for the setup to complete (this may take a few minutes)
-5. You'll see messages like "Building application..." and "Database initialized successfully"
-6. Press any key when it says "Press any key to continue..."
+**Step 1: Initialize Gradle (downloads Gradle - takes 1-2 minutes)**
+```powershell
+.\gradlew.bat --version
+```
+Wait for this to complete. You should see Gradle version information.
+
+**Step 2: Run the setup**
+```powershell
+.\install.bat
+```
+Wait for the setup to complete (may take a few minutes). You'll see messages like "Building application..." and "Database initialized successfully".
 
 ✅ **Setup is complete when you see "Setup complete!"**
 
+**That's it!** Keep this PowerShell window open - you'll use it to run L2Loot commands.
+
 ## Part 4: Using L2Loot
 
-### Opening the Command Prompt in the Right Place
-1. Open **File Explorer** and go to your L2Loot folder
-2. Click in the **address bar** (where it shows the folder path)
-3. Type `cmd` and press **Enter**
-4. A black command window will open in the right location
+### Using the Same PowerShell Window
+If you still have the PowerShell window open from setup, great! If not:
+1. Go to your L2Loot folder
+2. **Right-click** in an empty area and select **"Open PowerShell window here"**
 
-### Basic Commands
+### Basic Commands - Copy and Paste These
 
 #### Find the Most Profitable Monsters for Your Level
-```cmd
+**Copy this command and replace the numbers with your level range:**
+```powershell
 .\bin\l2loot.bat farm-analysis --min-level 20 --max-level 40
 ```
-**Replace 20 and 40 with your character's level range**
 
 **Example for level 30-35 character:**
-```cmd
+```powershell
 .\bin\l2loot.bat farm-analysis --min-level 30 --max-level 35
 ```
 
 #### Show Only Top 5 Results
-```cmd
+```powershell
 .\bin\l2loot.bat farm-analysis --min-level 30 --max-level 35 --limit 5
 ```
 
 #### Show Only Spoil Income (No Regular Drops)
-```cmd
+```powershell
 .\bin\l2loot.bat farm-analysis --min-level 30 --max-level 35 --spoil-only
 ```
 
 #### Search for Specific Monsters
-```cmd
+```powershell
 .\bin\l2loot.bat npcs --name "orc"
 ```
 
 #### Find Monsters in a Level Range
-```cmd
+```powershell
 .\bin\l2loot.bat npcs --min-level 25 --max-level 35
 ```
 
 #### See All Available Commands
-```cmd
+```powershell
 .\bin\l2loot.bat --help
 ```
 
@@ -162,8 +164,8 @@ The file looks like this:
 3. **Save the file** (Ctrl + S)
 
 ### Step 3: Update the Database
-After editing prices, run this command:
-```cmd
+After editing prices, **copy and paste this command** in your PowerShell window:
+```powershell
 .\bin\l2loot.bat update-prices
 ```
 
@@ -222,12 +224,14 @@ After editing prices, run this command:
 
 ### Checking Current Item Prices
 
-To see what prices are currently set in the database:
+To see what prices are currently set in the database, **copy and paste these commands**:
 
-```cmd
+```powershell
 # See all item prices
 .\bin\l2loot.bat get-item-prices
+```
 
+```powershell
 # Check specific items (use abbreviations)
 .\bin\l2loot.bat get-item-prices --item-abbr ab,steel,io
 ```
@@ -241,20 +245,28 @@ iron_ore (io): 460
 
 ## Part 6: Quick Reference
 
-### Most Common Commands
-```cmd
+### Most Common Commands - Copy and Paste
+```powershell
 # Find profitable spots for your level (change the numbers!)
 .\bin\l2loot.bat farm-analysis --min-level YOUR_MIN_LEVEL --max-level YOUR_MAX_LEVEL
+```
 
+```powershell
 # Update prices after editing the price file
 .\bin\l2loot.bat update-prices
+```
 
+```powershell
 # Check current item prices
 .\bin\l2loot.bat get-item-prices --item-abbr ab,steel,io
+```
 
+```powershell
 # Search for monsters by name
 .\bin\l2loot.bat npcs --name "MONSTER_NAME"
+```
 
+```powershell
 # Get help
 .\bin\l2loot.bat --help
 ```
@@ -274,9 +286,9 @@ iron_ore (io): 460
 
 ### "The system cannot find the path specified"
 **Solution**: You're not in the right folder
-1. Make sure you opened the command prompt in the L2Loot folder
+1. Make sure you opened PowerShell in the L2Loot folder
 2. You should see files like `install.bat` and `TECH_README.md` in the folder
-3. Follow the "Opening the Command Prompt in the Right Place" section
+3. Close PowerShell and right-click in the L2Loot folder, then select "Open PowerShell window here"
 
 ### "Access is denied" when running install.bat
 **Solution**: Run as administrator
@@ -284,11 +296,11 @@ iron_ore (io): 460
 2. Select "Run as administrator"
 3. Click "Yes" when Windows asks for permission
 
-### The command window closes immediately
+### The PowerShell window closes immediately
 **Solution**: 
 1. Don't double-click the .bat files
-2. Open command prompt first, then run the commands
-3. Follow the "Opening the Command Prompt in the Right Place" section
+2. Open PowerShell first, then copy and paste the commands
+3. Right-click in the L2Loot folder and select "Open PowerShell window here"
 
 ### "Build failed" during installation
 **Solutions**:
@@ -300,12 +312,12 @@ iron_ore (io): 460
 ### "Gradle is not recognized" or Gradle download fails
 **Solutions**:
 1. Make sure you have internet connection
-2. Try running the Gradle initialization manually:
-   ```cmd
+2. Try running the Gradle initialization manually by copying and pasting:
+   ```powershell
    .\gradlew.bat --version
    ```
 3. Wait for the download to complete (may take 1-2 minutes)
-4. Then run `install.bat`
+4. Then copy and paste: `.\install.bat`
 
 ## Getting Help
 
