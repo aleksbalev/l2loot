@@ -55,15 +55,11 @@ If someone gave you a folder with L2Loot files, skip to **Part 3**.
 ## Part 3: Setting Up L2Loot
 
 ### Complete Setup in Terminal
-1. **In the same terminal window** from Java verification, navigate to your l2loot-main folder:
-   ```powershell
-   cd "C:\path\to\your\l2loot-main"
-   ```
-   *Replace the path with where you extracted L2Loot*
 
-   **OR** if you prefer: Close the current terminal, go to the l2loot-main folder, **right-click** in an empty area and select **"Open in Terminal"**
+1. Go to your L2Loot (l2loot-main) folder
+2. **Right-click** in an empty area and select **"Open in Terminal"**
 
-2. **Copy and paste** the following commands one by one (press Enter after each):
+**Copy and paste** the following commands one by one (press Enter after each):
 
 **Step 1: Build the project (downloads dependencies and builds - takes 3-5 minutes)**
 ```powershell
@@ -101,19 +97,14 @@ If you still have the terminal window open from setup, great! If not:
 .\bin\l2loot.bat farm-analysis --min-level 30 --max-level 35
 ```
 
-#### Show Only Top 5 Results
+#### Show Only Top 10 Results (standard is 5)
 ```powershell
-.\bin\l2loot.bat farm-analysis --min-level 30 --max-level 35 --limit 5
+.\bin\l2loot.bat farm-analysis --min-level 30 --max-level 35 --limit 10
 ```
 
 #### Show Only Spoil Income (No Regular Drops)
 ```powershell
 .\bin\l2loot.bat farm-analysis --min-level 30 --max-level 35 --spoil-only
-```
-
-#### Search for Specific Monsters
-```powershell
-.\bin\l2loot.bat npcs --name "orc"
 ```
 
 #### Find Monsters in a Level Range
@@ -243,8 +234,6 @@ After editing prices, **copy and paste this command** in your terminal window:
 | Thread | thread | thread |
 | Varnish | varnish | varnish |
 
-*You can also see current prices by running: `.\bin\l2loot.bat get-item-prices`*
-
 ### Checking Current Item Prices
 
 To see what prices are currently set in the database, **copy and paste these commands**:
@@ -282,11 +271,6 @@ iron_ore (io): 460
 ```powershell
 # Check current item prices
 .\bin\l2loot.bat get-item-prices --item-abbr ab,steel,io
-```
-
-```powershell
-# Search for monsters by name
-.\bin\l2loot.bat npcs --name "MONSTER_NAME"
 ```
 
 ```powershell
