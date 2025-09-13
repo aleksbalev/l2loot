@@ -28,14 +28,18 @@ L2Loot needs Java to run. Here's how to install it:
 4. Click **"Finish"** when done
 
 ### Step 3: Verify Java is Installed
-1. Press **Windows Key + R**
-2. Type `cmd` and press **Enter**
-3. In the black window that opens, type: `java -version`
-4. Press **Enter**
-5. You should see something like `openjdk version "21.0.x"`
+1. **Right-click** on your desktop and select **"Open in Terminal"**
+2. In the terminal window that opens, **copy and paste** this command:
+   ```powershell
+   java -version
+   ```
+3. Press **Enter**
+4. You should see something like `openjdk version "21.0.x"`
 
 ✅ **If you see a version number, Java is installed correctly!**
 ❌ **If you see "java is not recognized", restart your computer and try again**
+
+**Keep this terminal window open** - you'll use it for the next steps.
 
 ## Part 2: Getting L2Loot
 
@@ -50,10 +54,16 @@ If someone gave you a folder with L2Loot files, skip to **Part 3**.
 
 ## Part 3: Setting Up L2Loot
 
-### Complete Setup in PowerShell
-1. Go to the l2loot-main folder
-2. **Right-click** in an empty area and select **"Open in Terminal"** it should open terminal in your current folder
-3. **Copy and paste** the following commands one by one (press Enter after each):
+### Complete Setup in Terminal
+1. **In the same terminal window** from Java verification, navigate to your l2loot-main folder:
+   ```powershell
+   cd "C:\path\to\your\l2loot-main"
+   ```
+   *Replace the path with where you extracted L2Loot*
+
+   **OR** if you prefer: Close the current terminal, go to the l2loot-main folder, **right-click** in an empty area and select **"Open in Terminal"**
+
+2. **Copy and paste** the following commands one by one (press Enter after each):
 
 **Step 1: Build the project (downloads dependencies and builds - takes 3-5 minutes)**
 ```powershell
@@ -69,14 +79,14 @@ Wait for the setup to complete. You'll see messages like "Database initialized s
 
 ✅ **Setup is complete when you see "Setup complete!"**
 
-**That's it!** Keep this PowerShell window open - you'll use it to run L2Loot commands.
+**That's it!** Keep this terminal window open - you'll use it to run L2Loot commands.
 
 ## Part 4: Using L2Loot
 
-### Using the Same PowerShell Window
-If you still have the PowerShell window open from setup, great! If not:
+### Using the Same Terminal Window
+If you still have the terminal window open from setup, great! If not:
 1. Go to your L2Loot folder
-2. **Right-click** in an empty area and select **"Open PowerShell window here"**
+2. **Right-click** in an empty area and select **"Open in Terminal"**
 
 ### Basic Commands - Copy and Paste These
 
@@ -177,7 +187,7 @@ The file looks like this:
 3. **Save the file** (Ctrl + S)
 
 ### Step 3: Update the Database
-After editing prices, **copy and paste this command** in your PowerShell window:
+After editing prices, **copy and paste this command** in your terminal window:
 ```powershell
 .\bin\l2loot.bat update-prices
 ```
@@ -299,9 +309,9 @@ iron_ore (io): 460
 
 ### "The system cannot find the path specified"
 **Solution**: You're not in the right folder
-1. Make sure you opened PowerShell in the L2Loot folder
+1. Make sure you opened the terminal in the L2Loot folder
 2. You should see files like `install.bat` and `TECH_README.md` in the folder
-3. Close PowerShell and right-click in the L2Loot folder, then select "Open PowerShell window here"
+3. Close the terminal and right-click in the L2Loot folder, then select "Open in Terminal"
 
 ### "Access is denied" when running install.bat
 **Solution**: Run as administrator
@@ -309,11 +319,11 @@ iron_ore (io): 460
 2. Select "Run as administrator"
 3. Click "Yes" when Windows asks for permission
 
-### The PowerShell window closes immediately
+### The terminal window closes immediately
 **Solution**: 
 1. Don't double-click the .bat files
-2. Open PowerShell first, then copy and paste the commands
-3. Right-click in the L2Loot folder and select "Open PowerShell window here"
+2. Open terminal first, then copy and paste the commands
+3. Right-click in the L2Loot folder and select "Open in Terminal"
 
 ### "Build artifacts not found" error
 **Solutions**:
