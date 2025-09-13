@@ -16,6 +16,10 @@ L2Loot is a tool that:
 
 L2Loot needs Java to run. Here's how to install it:
 
+**!IMPORTANT**: 
+If you are not able to answer question what is JDK or JRE, and don't know how to set up JAVA_HOME and what Java version do you have on your machine
+**install Java as I described below**
+
 ### Step 1: Download Java
 1. Go to https://adoptium.net/
 2. Click the big **"Download"** button
@@ -23,23 +27,28 @@ L2Loot needs Java to run. Here's how to install it:
 
 ### Step 2: Install Java
 1. **Double-click** the downloaded file
-2. Click **"Next"** through all the screens
-3. Click **"Install"** when asked
-4. Click **"Finish"** when done
+2. Accept Terms of Service
+[](https://github.com/aleksbalev/l2loot/assets/temurin_terms.png)
+3. Choose whatever installation scope you want
+[](https://github.com/aleksbalev/l2loot/assets/installation_scope.png)
+4. IMPORTANT STEP: For Set Or Overwrite JAVA_HOME variable set option that is on the picture below
+[](https://github.com/aleksbalev/l2loot/assets/custom_setup.png)
+5. Click **"Finish"** when done
+6. Restart your computer
 
 ### Step 3: Verify Java is Installed
-1. **Right-click** on your desktop and select **"Open in Terminal"**
+1. Open Windows PowerShell (search for "PowerShell" in the Start Menu)
 2. In the terminal window that opens, **copy and paste** this command:
    ```powershell
    java -version
    ```
 3. Press **Enter**
 4. You should see something like `openjdk version "21.0.x"`
+5. You can't have java version less than **17**
 
 ✅ **If you see a version number, Java is installed correctly!**
 ❌ **If you see "java is not recognized", restart your computer and try again**
 
-**Keep this terminal window open** - you'll use it for the next steps.
 
 ## Part 2: Getting L2Loot
 
@@ -57,7 +66,8 @@ If someone gave you a folder with L2Loot files, skip to **Part 3**.
 ### Complete Setup in Terminal
 
 1. Go to your L2Loot (l2loot-main) folder
-2. **Right-click** in an empty area and select **"Open in Terminal"**
+2. You should be able to see a file called `gradlew.bat` and `install.bat`
+3. Press CTRL + L and type powershell to open a terminal window in this folder
 
 **Copy and paste** the following commands one by one (press Enter after each):
 
