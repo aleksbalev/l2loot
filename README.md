@@ -97,8 +97,9 @@ Wait for the setup to complete. You'll see messages like "Database initialized s
 
 ### Using the Same Terminal Window
 If you still have the terminal window open from setup, great! If not:
-1. Go to your L2Loot folder
-2. **Right-click** in an empty area and select **"Open in Terminal"**
+1. Go to your L2Loot (l2loot-main) folder
+2. You should be able to see a file called `gradlew.bat` and `install.bat`
+3. Press CTRL + L and type **powershell** and press **Enter** to open a terminal window in this folder
 
 ### Basic Commands - Copy and Paste These
 
